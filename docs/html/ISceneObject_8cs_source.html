@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BHS Claw Engine Test: Исходный файл src/Core/Interfaces/ISceneObject.cs</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">BHS Claw Engine Test<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Тестовый движок для симуляции физики шарика с коллизиями</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',false);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a href="dir_a2f0e5642e47e7ed59fe0f0829eafb5f.html">Core</a></li><li class="navelem"><a href="dir_3651bf2b295d42138f432ca9e83a2b0e.html">Interfaces</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">ISceneObject.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="ISceneObject_8cs.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespaceBHS_1_1Engine_1_1Core_1_1Math.html">BHS.Engine.Core.Math</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="foldopen" id="foldopen00003" data-start="{" data-end="}">
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno"><a class="line" href="namespaceBHS_1_1Engine_1_1Core_1_1Interfaces.html">    3</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceBHS_1_1Engine_1_1Core_1_1Interfaces.html">BHS.Engine.Core.Interfaces</a></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>{</div>
+<div class="foldopen" id="foldopen00008" data-start="{" data-end="};">
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="interfaceBHS_1_1Engine_1_1Core_1_1Interfaces_1_1ISceneObject.html">    8</a></span>    <span class="keyword">public</span> <span class="keyword">interface </span><a class="code hl_interface" href="interfaceBHS_1_1Engine_1_1Core_1_1Interfaces_1_1ISceneObject.html">ISceneObject</a></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="interfaceBHS_1_1Engine_1_1Core_1_1Interfaces_1_1ISceneObject.html#a3bfbccfa1b335383c03aaf77db165479">   13</a></span>        Guid <a class="code hl_property" href="interfaceBHS_1_1Engine_1_1Core_1_1Interfaces_1_1ISceneObject.html#a3bfbccfa1b335383c03aaf77db165479">Id</a> { <span class="keyword">get</span>; }</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="interfaceBHS_1_1Engine_1_1Core_1_1Interfaces_1_1ISceneObject.html#a1b922c15c54a8cc2d2c6ae6dadd103e2">   18</a></span>        <a class="code hl_struct" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> <a class="code hl_property" href="interfaceBHS_1_1Engine_1_1Core_1_1Interfaces_1_1ISceneObject.html#a1b922c15c54a8cc2d2c6ae6dadd103e2">Position</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    }</div>
+</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>}</div>
+</div>
+<div class="ttc" id="ainterfaceBHS_1_1Engine_1_1Core_1_1Interfaces_1_1ISceneObject_html"><div class="ttname"><a href="interfaceBHS_1_1Engine_1_1Core_1_1Interfaces_1_1ISceneObject.html">BHS.Engine.Core.Interfaces.ISceneObject</a></div><div class="ttdoc">Интерфейс для всех объектов сцены</div><div class="ttdef"><b>Определения</b> <a href="#l00008">ISceneObject.cs:9</a></div></div>
+<div class="ttc" id="ainterfaceBHS_1_1Engine_1_1Core_1_1Interfaces_1_1ISceneObject_html_a1b922c15c54a8cc2d2c6ae6dadd103e2"><div class="ttname"><a href="interfaceBHS_1_1Engine_1_1Core_1_1Interfaces_1_1ISceneObject.html#a1b922c15c54a8cc2d2c6ae6dadd103e2">BHS.Engine.Core.Interfaces.ISceneObject.Position</a></div><div class="ttdeci">Vector2 Position</div><div class="ttdoc">Позиция объекта в мире</div><div class="ttdef"><b>Определения</b> <a href="#l00018">ISceneObject.cs:18</a></div></div>
+<div class="ttc" id="ainterfaceBHS_1_1Engine_1_1Core_1_1Interfaces_1_1ISceneObject_html_a3bfbccfa1b335383c03aaf77db165479"><div class="ttname"><a href="interfaceBHS_1_1Engine_1_1Core_1_1Interfaces_1_1ISceneObject.html#a3bfbccfa1b335383c03aaf77db165479">BHS.Engine.Core.Interfaces.ISceneObject.Id</a></div><div class="ttdeci">Guid Id</div><div class="ttdoc">Уникальный идентификатор объекта</div><div class="ttdef"><b>Определения</b> <a href="#l00013">ISceneObject.cs:13</a></div></div>
+<div class="ttc" id="anamespaceBHS_1_1Engine_1_1Core_1_1Interfaces_html"><div class="ttname"><a href="namespaceBHS_1_1Engine_1_1Core_1_1Interfaces.html">BHS.Engine.Core.Interfaces</a></div><div class="ttdef"><b>Определения</b> <a href="#l00003">ISceneObject.cs:4</a></div></div>
+<div class="ttc" id="anamespaceBHS_1_1Engine_1_1Core_1_1Math_html"><div class="ttname"><a href="namespaceBHS_1_1Engine_1_1Core_1_1Math.html">BHS.Engine.Core.Math</a></div><div class="ttdef"><b>Определения</b> <a href="MathHelper_8cs_source.html#l00003">MathHelper.cs:4</a></div></div>
+<div class="ttc" id="astructBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2_html"><div class="ttname"><a href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">BHS.Engine.Core.Math.Vector2</a></div><div class="ttdoc">2D вектор для позиций и скоростей</div><div class="ttdef"><b>Определения</b> <a href="Vector2_8cs_source.html#l00008">Vector2.cs:9</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

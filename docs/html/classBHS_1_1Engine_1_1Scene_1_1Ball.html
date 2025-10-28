@@ -1,0 +1,494 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BHS Claw Engine Test: Класс BHS.Engine.Scene.Ball</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">BHS Claw Engine Test<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Тестовый движок для симуляции физики шарика с коллизиями</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',false);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a href="namespaceBHS.html">BHS</a></li><li class="navelem"><a href="namespaceBHS_1_1Engine.html">Engine</a></li><li class="navelem"><a href="namespaceBHS_1_1Engine_1_1Scene.html">Scene</a></li><li class="navelem"><a href="classBHS_1_1Engine_1_1Scene_1_1Ball.html">Ball</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#properties">Свойства</a> &#124;
+<a href="classBHS_1_1Engine_1_1Scene_1_1Ball-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс BHS.Engine.Scene.Ball</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Шарик - окружность с радиусом и скоростью для физической симуляции  
+ <a href="#details">Подробнее...</a></p>
+<div class="dynheader">
+Граф наследования:BHS.Engine.Scene.Ball:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBHS_1_1Engine_1_1Scene_1_1Ball__inherit__graph.png" border="0" usemap="#aBHS_8Engine_8Scene_8Ball_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<div class="dynheader">
+Граф связей класса BHS.Engine.Scene.Ball:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBHS_1_1Engine_1_1Scene_1_1Ball__coll__graph.png" border="0" usemap="#aBHS_8Engine_8Scene_8Ball_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:aab9add9796ce7f657e2630c7af833d50" id="r_aab9add9796ce7f657e2630c7af833d50"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab9add9796ce7f657e2630c7af833d50">Ball</a> (<a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> position, float radius, <a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> velocity)</td></tr>
+<tr class="memitem:a53b6827b561632b4a0d051bc5a7884c7" id="r_a53b6827b561632b4a0d051bc5a7884c7"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53b6827b561632b4a0d051bc5a7884c7">Update</a> (float deltaTime)</td></tr>
+<tr class="memdesc:a53b6827b561632b4a0d051bc5a7884c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Двигаю шарик по его скорости  <br /></td></tr>
+<tr class="memitem:aac4d9f6b68930ecf2e6e3255564e5e6b" id="r_aac4d9f6b68930ecf2e6e3255564e5e6b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac4d9f6b68930ecf2e6e3255564e5e6b">Intersects</a> (<a class="el" href="classBHS_1_1Engine_1_1Scene_1_1Ball.html">Ball</a> other)</td></tr>
+<tr class="memdesc:aac4d9f6b68930ecf2e6e3255564e5e6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяю столкновение с другим шариком  <br /></td></tr>
+<tr class="memitem:afdc09834fb870bd1f36a87c81930edf9" id="r_afdc09834fb870bd1f36a87c81930edf9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afdc09834fb870bd1f36a87c81930edf9">ContainsPoint</a> (<a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> point)</td></tr>
+<tr class="memdesc:afdc09834fb870bd1f36a87c81930edf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяю содержит ли шарик точку  <br /></td></tr>
+<tr class="memitem:afa9c6583c2ca08680ef26b29a293c894" id="r_afa9c6583c2ca08680ef26b29a293c894"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa9c6583c2ca08680ef26b29a293c894">Reflect</a> (<a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> normal)</td></tr>
+<tr class="memdesc:afa9c6583c2ca08680ef26b29a293c894"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отражаю шарик от стены по нормали  <br /></td></tr>
+<tr class="memitem:a6ac9841bec5d922d8c8f073cbfbbc9db" id="r_a6ac9841bec5d922d8c8f073cbfbbc9db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ac9841bec5d922d8c8f073cbfbbc9db">Stop</a> ()</td></tr>
+<tr class="memdesc:a6ac9841bec5d922d8c8f073cbfbbc9db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Останавливаю шарик  <br /></td></tr>
+<tr class="memitem:a2884ba4e05cb1b83771ac872b804e669" id="r_a2884ba4e05cb1b83771ac872b804e669"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2884ba4e05cb1b83771ac872b804e669">SetVelocity</a> (<a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> newVelocity)</td></tr>
+<tr class="memdesc:a2884ba4e05cb1b83771ac872b804e669"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливаю новую скорость  <br /></td></tr>
+<tr class="memitem:adf034245849aa59c47aa5ecf565564c3" id="r_adf034245849aa59c47aa5ecf565564c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf034245849aa59c47aa5ecf565564c3">AddVelocity</a> (<a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> velocityDelta)</td></tr>
+<tr class="memdesc:adf034245849aa59c47aa5ecf565564c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавляю скорость к текущей  <br /></td></tr>
+<tr class="memitem:a0191ad8606a729ceadfc98c38826fd28" id="r_a0191ad8606a729ceadfc98c38826fd28"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0191ad8606a729ceadfc98c38826fd28">ToString</a> ()</td></tr>
+<tr class="inherit_header pub_methods_classBHS_1_1Engine_1_1Scene_1_1SceneObject"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classBHS_1_1Engine_1_1Scene_1_1SceneObject')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Открытые члены унаследованные от <a class="el" href="classBHS_1_1Engine_1_1Scene_1_1SceneObject.html">BHS.Engine.Scene.SceneObject</a></td></tr>
+<tr class="memitem:a7e271ce099def2727a73428dceba8abb inherit pub_methods_classBHS_1_1Engine_1_1Scene_1_1SceneObject" id="r_a7e271ce099def2727a73428dceba8abb"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBHS_1_1Engine_1_1Scene_1_1SceneObject.html#a7e271ce099def2727a73428dceba8abb">ToString</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-properties" class="groupheader"><a id="properties" name="properties"></a>
+Свойства</h2></td></tr>
+<tr class="memitem:ad3ca4292cbe13f6902829c6850e635b0" id="r_ad3ca4292cbe13f6902829c6850e635b0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad3ca4292cbe13f6902829c6850e635b0">Radius</a><code> [get, set]</code></td></tr>
+<tr class="memitem:ad3e422dfdee7d14b14466ec756f98c81" id="r_ad3e422dfdee7d14b14466ec756f98c81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad3e422dfdee7d14b14466ec756f98c81">Velocity</a><code> [get, set]</code></td></tr>
+<tr class="memitem:a0712cbd7faf26368a97376d1bd310d7f" id="r_a0712cbd7faf26368a97376d1bd310d7f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0712cbd7faf26368a97376d1bd310d7f">Mass</a> = 1.0f<code> [get, set]</code></td></tr>
+<tr class="inherit_header properties_classBHS_1_1Engine_1_1Scene_1_1SceneObject"><td colspan="2" onclick="javascript:dynsection.toggleInherit('properties_classBHS_1_1Engine_1_1Scene_1_1SceneObject')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Свойства унаследованные от <a class="el" href="classBHS_1_1Engine_1_1Scene_1_1SceneObject.html">BHS.Engine.Scene.SceneObject</a></td></tr>
+<tr class="memitem:a3b1b972cee8c629ea5065a3882b0518d inherit properties_classBHS_1_1Engine_1_1Scene_1_1SceneObject" id="r_a3b1b972cee8c629ea5065a3882b0518d"><td class="memItemLeft" align="right" valign="top">Guid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBHS_1_1Engine_1_1Scene_1_1SceneObject.html#a3b1b972cee8c629ea5065a3882b0518d">Id</a><code> [get]</code></td></tr>
+<tr class="memdesc:a3b1b972cee8c629ea5065a3882b0518d inherit properties_classBHS_1_1Engine_1_1Scene_1_1SceneObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Уникальный идентификатор объекта  <br /></td></tr>
+<tr class="memitem:a25d0373f3aa347cbd38bb93ddf84dd18 inherit properties_classBHS_1_1Engine_1_1Scene_1_1SceneObject" id="r_a25d0373f3aa347cbd38bb93ddf84dd18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBHS_1_1Engine_1_1Scene_1_1SceneObject.html#a25d0373f3aa347cbd38bb93ddf84dd18">Position</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a25d0373f3aa347cbd38bb93ddf84dd18 inherit properties_classBHS_1_1Engine_1_1Scene_1_1SceneObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Позиция объекта в мире  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
+Дополнительные унаследованные члены</h2></td></tr>
+<tr class="inherit_header pro_methods_classBHS_1_1Engine_1_1Scene_1_1SceneObject"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classBHS_1_1Engine_1_1Scene_1_1SceneObject')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Защищенные члены унаследованные от <a class="el" href="classBHS_1_1Engine_1_1Scene_1_1SceneObject.html">BHS.Engine.Scene.SceneObject</a></td></tr>
+<tr class="memitem:abac8a442bc41f301b61800872fbb9bde inherit pro_methods_classBHS_1_1Engine_1_1Scene_1_1SceneObject" id="r_abac8a442bc41f301b61800872fbb9bde"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBHS_1_1Engine_1_1Scene_1_1SceneObject.html#abac8a442bc41f301b61800872fbb9bde">SceneObject</a> (<a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> position)</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Шарик - окружность с радиусом и скоростью для физической симуляции </p>
+
+<p class="definition">См. определение в файле <a class="el" href="Ball_8cs_source.html">Ball.cs</a> строка <a class="el" href="Ball_8cs_source.html#l00008">8</a></p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Конструктор(ы)</h2>
+<a id="aab9add9796ce7f657e2630c7af833d50" name="aab9add9796ce7f657e2630c7af833d50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab9add9796ce7f657e2630c7af833d50">&#9670;&#160;</a></span>Ball()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BHS.Engine.Scene.Ball.Ball </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a></td>          <td class="paramname"><span class="paramname"><em>position</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>radius</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a></td>          <td class="paramname"><span class="paramname"><em>velocity</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="Ball_8cs_source.html">Ball.cs</a> строка <a class="el" href="Ball_8cs_source.html#l00014">14</a></p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="adf034245849aa59c47aa5ecf565564c3" name="adf034245849aa59c47aa5ecf565564c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf034245849aa59c47aa5ecf565564c3">&#9670;&#160;</a></span>AddVelocity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BHS.Engine.Scene.Ball.AddVelocity </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a></td>          <td class="paramname"><span class="paramname"><em>velocityDelta</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Добавляю скорость к текущей </p>
+
+<p class="definition">См. определение в файле <a class="el" href="Ball_8cs_source.html">Ball.cs</a> строка <a class="el" href="Ball_8cs_source.html#l00072">72</a></p>
+
+</div>
+</div>
+<a id="afdc09834fb870bd1f36a87c81930edf9" name="afdc09834fb870bd1f36a87c81930edf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdc09834fb870bd1f36a87c81930edf9">&#9670;&#160;</a></span>ContainsPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool BHS.Engine.Scene.Ball.ContainsPoint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a></td>          <td class="paramname"><span class="paramname"><em>point</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверяю содержит ли шарик точку </p>
+
+<p class="definition">См. определение в файле <a class="el" href="Ball_8cs_source.html">Ball.cs</a> строка <a class="el" href="Ball_8cs_source.html#l00040">40</a></p>
+
+</div>
+</div>
+<a id="aac4d9f6b68930ecf2e6e3255564e5e6b" name="aac4d9f6b68930ecf2e6e3255564e5e6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac4d9f6b68930ecf2e6e3255564e5e6b">&#9670;&#160;</a></span>Intersects()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool BHS.Engine.Scene.Ball.Intersects </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classBHS_1_1Engine_1_1Scene_1_1Ball.html">Ball</a></td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверяю столкновение с другим шариком </p>
+
+<p class="definition">См. определение в файле <a class="el" href="Ball_8cs_source.html">Ball.cs</a> строка <a class="el" href="Ball_8cs_source.html#l00031">31</a></p>
+
+</div>
+</div>
+<a id="afa9c6583c2ca08680ef26b29a293c894" name="afa9c6583c2ca08680ef26b29a293c894"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa9c6583c2ca08680ef26b29a293c894">&#9670;&#160;</a></span>Reflect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BHS.Engine.Scene.Ball.Reflect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a></td>          <td class="paramname"><span class="paramname"><em>normal</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Отражаю шарик от стены по нормали </p>
+
+<p class="definition">См. определение в файле <a class="el" href="Ball_8cs_source.html">Ball.cs</a> строка <a class="el" href="Ball_8cs_source.html#l00048">48</a></p>
+
+</div>
+</div>
+<a id="a2884ba4e05cb1b83771ac872b804e669" name="a2884ba4e05cb1b83771ac872b804e669"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2884ba4e05cb1b83771ac872b804e669">&#9670;&#160;</a></span>SetVelocity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BHS.Engine.Scene.Ball.SetVelocity </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a></td>          <td class="paramname"><span class="paramname"><em>newVelocity</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Устанавливаю новую скорость </p>
+
+<p class="definition">См. определение в файле <a class="el" href="Ball_8cs_source.html">Ball.cs</a> строка <a class="el" href="Ball_8cs_source.html#l00064">64</a></p>
+
+</div>
+</div>
+<a id="a6ac9841bec5d922d8c8f073cbfbbc9db" name="a6ac9841bec5d922d8c8f073cbfbbc9db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ac9841bec5d922d8c8f073cbfbbc9db">&#9670;&#160;</a></span>Stop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BHS.Engine.Scene.Ball.Stop </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Останавливаю шарик </p>
+
+<p class="definition">См. определение в файле <a class="el" href="Ball_8cs_source.html">Ball.cs</a> строка <a class="el" href="Ball_8cs_source.html#l00056">56</a></p>
+
+</div>
+</div>
+<a id="a0191ad8606a729ceadfc98c38826fd28" name="a0191ad8606a729ceadfc98c38826fd28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0191ad8606a729ceadfc98c38826fd28">&#9670;&#160;</a></span>ToString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override string BHS.Engine.Scene.Ball.ToString </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="Ball_8cs_source.html">Ball.cs</a> строка <a class="el" href="Ball_8cs_source.html#l00077">77</a></p>
+
+</div>
+</div>
+<a id="a53b6827b561632b4a0d051bc5a7884c7" name="a53b6827b561632b4a0d051bc5a7884c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53b6827b561632b4a0d051bc5a7884c7">&#9670;&#160;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void BHS.Engine.Scene.Ball.Update </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>deltaTime</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Двигаю шарик по его скорости </p>
+
+<p>Переопределяет метод предка <a class="el" href="classBHS_1_1Engine_1_1Scene_1_1SceneObject.html#a2098e42113949e67469e5cc7611df645">BHS.Engine.Scene.SceneObject</a>.</p>
+
+<p class="definition">См. определение в файле <a class="el" href="Ball_8cs_source.html">Ball.cs</a> строка <a class="el" href="Ball_8cs_source.html#l00023">23</a></p>
+
+</div>
+</div>
+<a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">Полный список свойств</h2>
+<a id="a0712cbd7faf26368a97376d1bd310d7f" name="a0712cbd7faf26368a97376d1bd310d7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0712cbd7faf26368a97376d1bd310d7f">&#9670;&#160;</a></span>Mass</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float BHS.Engine.Scene.Ball.Mass = 1.0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="Ball_8cs_source.html">Ball.cs</a> строка <a class="el" href="Ball_8cs_source.html#l00012">12</a></p>
+
+</div>
+</div>
+<a id="ad3ca4292cbe13f6902829c6850e635b0" name="ad3ca4292cbe13f6902829c6850e635b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3ca4292cbe13f6902829c6850e635b0">&#9670;&#160;</a></span>Radius</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float BHS.Engine.Scene.Ball.Radius</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="Ball_8cs_source.html">Ball.cs</a> строка <a class="el" href="Ball_8cs_source.html#l00010">10</a></p>
+
+</div>
+</div>
+<a id="ad3e422dfdee7d14b14466ec756f98c81" name="ad3e422dfdee7d14b14466ec756f98c81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3e422dfdee7d14b14466ec756f98c81">&#9670;&#160;</a></span>Velocity</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> BHS.Engine.Scene.Ball.Velocity</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="Ball_8cs_source.html">Ball.cs</a> строка <a class="el" href="Ball_8cs_source.html#l00011">11</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>src/Scene/<a class="el" href="Ball_8cs_source.html">Ball.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

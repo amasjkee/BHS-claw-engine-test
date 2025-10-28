@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BHS Claw Engine Test: Исходный файл src/ECS/Components/CircleColliderComponent.cs</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">BHS Claw Engine Test<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Тестовый движок для симуляции физики шарика с коллизиями</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',false);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a href="dir_b1a122bf62c958266ec5bf64d14fde5a.html">ECS</a></li><li class="navelem"><a href="dir_eba7f6b8b7d3fd8e024a882aba073963.html">Components</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">CircleColliderComponent.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="CircleColliderComponent_8cs.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespaceBHS_1_1Engine_1_1Core_1_1Math.html">BHS.Engine.Core.Math</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="foldopen" id="foldopen00003" data-start="{" data-end="}">
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno"><a class="line" href="namespaceBHS_1_1Engine_1_1ECS.html">    3</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceBHS_1_1Engine_1_1ECS_1_1Components.html">BHS.Engine.ECS.Components</a></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>{</div>
+<div class="foldopen" id="foldopen00008" data-start="{" data-end="};">
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="structBHS_1_1Engine_1_1ECS_1_1Components_1_1CircleColliderComponent.html">    8</a></span>    <span class="keyword">public</span> <span class="keyword">struct </span><a class="code hl_function" href="structBHS_1_1Engine_1_1ECS_1_1Components_1_1CircleColliderComponent.html#a27f0a0648d3746f79a4958ab4f514037">CircleColliderComponent</a></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="structBHS_1_1Engine_1_1ECS_1_1Components_1_1CircleColliderComponent.html#a50a287949f5911f346592052d9c54328">   13</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="structBHS_1_1Engine_1_1ECS_1_1Components_1_1CircleColliderComponent.html#a50a287949f5911f346592052d9c54328">Radius</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="structBHS_1_1Engine_1_1ECS_1_1Components_1_1CircleColliderComponent.html#a408ab14e25f2f303cf8138b803e7b1de">   18</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="structBHS_1_1Engine_1_1ECS_1_1Components_1_1CircleColliderComponent.html#a408ab14e25f2f303cf8138b803e7b1de">Mass</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="foldopen" id="foldopen00020" data-start="{" data-end="}">
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="structBHS_1_1Engine_1_1ECS_1_1Components_1_1CircleColliderComponent.html#a27f0a0648d3746f79a4958ab4f514037">   20</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="structBHS_1_1Engine_1_1ECS_1_1Components_1_1CircleColliderComponent.html#a27f0a0648d3746f79a4958ab4f514037">CircleColliderComponent</a>(<span class="keywordtype">float</span> radius, <span class="keywordtype">float</span> mass = 1.0f)</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            <a class="code hl_variable" href="structBHS_1_1Engine_1_1ECS_1_1Components_1_1CircleColliderComponent.html#a50a287949f5911f346592052d9c54328">Radius</a> = radius;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            <a class="code hl_variable" href="structBHS_1_1Engine_1_1ECS_1_1Components_1_1CircleColliderComponent.html#a408ab14e25f2f303cf8138b803e7b1de">Mass</a> = mass;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        }</div>
+</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="}">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="structBHS_1_1Engine_1_1ECS_1_1Components_1_1CircleColliderComponent.html#a99291c0073890ca197310a079232abb8">   26</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_function" href="structBHS_1_1Engine_1_1ECS_1_1Components_1_1CircleColliderComponent.html#a99291c0073890ca197310a079232abb8">ToString</a>()</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            <span class="keywordflow">return</span> $<span class="stringliteral">&quot;CircleCollider(Radius: {Radius:F2}, Mass: {Mass:F2})&quot;</span>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        }</div>
+</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    }</div>
+</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>}</div>
+</div>
+<div class="ttc" id="anamespaceBHS_1_1Engine_1_1Core_1_1Math_html"><div class="ttname"><a href="namespaceBHS_1_1Engine_1_1Core_1_1Math.html">BHS.Engine.Core.Math</a></div><div class="ttdef"><b>Определения</b> <a href="MathHelper_8cs_source.html#l00003">MathHelper.cs:4</a></div></div>
+<div class="ttc" id="anamespaceBHS_1_1Engine_1_1ECS_1_1Components_html"><div class="ttname"><a href="namespaceBHS_1_1Engine_1_1ECS_1_1Components.html">BHS.Engine.ECS.Components</a></div><div class="ttdef"><b>Определения</b> <a href="#l00003">CircleColliderComponent.cs:4</a></div></div>
+<div class="ttc" id="astructBHS_1_1Engine_1_1ECS_1_1Components_1_1CircleColliderComponent_html_a27f0a0648d3746f79a4958ab4f514037"><div class="ttname"><a href="structBHS_1_1Engine_1_1ECS_1_1Components_1_1CircleColliderComponent.html#a27f0a0648d3746f79a4958ab4f514037">BHS.Engine.ECS.Components.CircleColliderComponent.CircleColliderComponent</a></div><div class="ttdeci">CircleColliderComponent(float radius, float mass=1.0f)</div><div class="ttdef"><b>Определения</b> <a href="#l00020">CircleColliderComponent.cs:20</a></div></div>
+<div class="ttc" id="astructBHS_1_1Engine_1_1ECS_1_1Components_1_1CircleColliderComponent_html_a408ab14e25f2f303cf8138b803e7b1de"><div class="ttname"><a href="structBHS_1_1Engine_1_1ECS_1_1Components_1_1CircleColliderComponent.html#a408ab14e25f2f303cf8138b803e7b1de">BHS.Engine.ECS.Components.CircleColliderComponent.Mass</a></div><div class="ttdeci">float Mass</div><div class="ttdoc">Масса объекта (для физических расчетов)</div><div class="ttdef"><b>Определения</b> <a href="#l00018">CircleColliderComponent.cs:18</a></div></div>
+<div class="ttc" id="astructBHS_1_1Engine_1_1ECS_1_1Components_1_1CircleColliderComponent_html_a50a287949f5911f346592052d9c54328"><div class="ttname"><a href="structBHS_1_1Engine_1_1ECS_1_1Components_1_1CircleColliderComponent.html#a50a287949f5911f346592052d9c54328">BHS.Engine.ECS.Components.CircleColliderComponent.Radius</a></div><div class="ttdeci">float Radius</div><div class="ttdoc">Радиус окружности</div><div class="ttdef"><b>Определения</b> <a href="#l00013">CircleColliderComponent.cs:13</a></div></div>
+<div class="ttc" id="astructBHS_1_1Engine_1_1ECS_1_1Components_1_1CircleColliderComponent_html_a99291c0073890ca197310a079232abb8"><div class="ttname"><a href="structBHS_1_1Engine_1_1ECS_1_1Components_1_1CircleColliderComponent.html#a99291c0073890ca197310a079232abb8">BHS.Engine.ECS.Components.CircleColliderComponent.ToString</a></div><div class="ttdeci">override string ToString()</div><div class="ttdef"><b>Определения</b> <a href="#l00026">CircleColliderComponent.cs:26</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

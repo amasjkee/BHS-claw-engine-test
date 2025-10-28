@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BHS Claw Engine Test: Исходный файл src/Scene/Ball.cs</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">BHS Claw Engine Test<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Тестовый движок для симуляции физики шарика с коллизиями</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',false);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a href="dir_204260ac86670e69c647eaba8962e745.html">Scene</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">Ball.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="Ball_8cs.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespaceBHS_1_1Engine_1_1Core_1_1Math.html">BHS.Engine.Core.Math</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="foldopen" id="foldopen00003" data-start="{" data-end="}">
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno"><a class="line" href="namespaceBHS_1_1Engine_1_1Scene.html">    3</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceBHS_1_1Engine_1_1Scene.html">BHS.Engine.Scene</a></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>{</div>
+<div class="foldopen" id="foldopen00008" data-start="{" data-end="};">
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="classBHS_1_1Engine_1_1Scene_1_1Ball.html">    8</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_function" href="classBHS_1_1Engine_1_1Scene_1_1Ball.html#aab9add9796ce7f657e2630c7af833d50">Ball</a> : <a class="code hl_function" href="classBHS_1_1Engine_1_1Scene_1_1SceneObject.html#abac8a442bc41f301b61800872fbb9bde">SceneObject</a></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="classBHS_1_1Engine_1_1Scene_1_1Ball.html#ad3ca4292cbe13f6902829c6850e635b0">   10</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_property" href="classBHS_1_1Engine_1_1Scene_1_1Ball.html#ad3ca4292cbe13f6902829c6850e635b0">Radius</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="classBHS_1_1Engine_1_1Scene_1_1Ball.html#ad3e422dfdee7d14b14466ec756f98c81">   11</a></span>        <span class="keyword">public</span> <a class="code hl_struct" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> <a class="code hl_property" href="classBHS_1_1Engine_1_1Scene_1_1Ball.html#ad3e422dfdee7d14b14466ec756f98c81">Velocity</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="classBHS_1_1Engine_1_1Scene_1_1Ball.html#a0712cbd7faf26368a97376d1bd310d7f">   12</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_property" href="classBHS_1_1Engine_1_1Scene_1_1Ball.html#a0712cbd7faf26368a97376d1bd310d7f">Mass</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = 1.0f;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="foldopen" id="foldopen00014" data-start="{" data-end="}">
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="classBHS_1_1Engine_1_1Scene_1_1Ball.html#aab9add9796ce7f657e2630c7af833d50">   14</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="classBHS_1_1Engine_1_1Scene_1_1Ball.html#aab9add9796ce7f657e2630c7af833d50">Ball</a>(<a class="code hl_struct" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> position, <span class="keywordtype">float</span> radius, <a class="code hl_struct" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> velocity) : base(position)</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>            <a class="code hl_property" href="classBHS_1_1Engine_1_1Scene_1_1Ball.html#ad3ca4292cbe13f6902829c6850e635b0">Radius</a> = radius;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            <a class="code hl_property" href="classBHS_1_1Engine_1_1Scene_1_1Ball.html#ad3e422dfdee7d14b14466ec756f98c81">Velocity</a> = velocity;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        }</div>
+</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span></div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="}">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="classBHS_1_1Engine_1_1Scene_1_1Ball.html#a53b6827b561632b4a0d051bc5a7884c7">   23</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classBHS_1_1Engine_1_1Scene_1_1Ball.html#a53b6827b561632b4a0d051bc5a7884c7">Update</a>(<span class="keywordtype">float</span> deltaTime)</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            <a class="code hl_property" href="classBHS_1_1Engine_1_1Scene_1_1SceneObject.html#a25d0373f3aa347cbd38bb93ddf84dd18">Position</a> += <a class="code hl_property" href="classBHS_1_1Engine_1_1Scene_1_1Ball.html#ad3e422dfdee7d14b14466ec756f98c81">Velocity</a> * deltaTime;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        }</div>
+</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span></div>
+<div class="foldopen" id="foldopen00031" data-start="{" data-end="}">
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classBHS_1_1Engine_1_1Scene_1_1Ball.html#aac4d9f6b68930ecf2e6e3255564e5e6b">   31</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classBHS_1_1Engine_1_1Scene_1_1Ball.html#aac4d9f6b68930ecf2e6e3255564e5e6b">Intersects</a>(<a class="code hl_function" href="classBHS_1_1Engine_1_1Scene_1_1Ball.html#aab9add9796ce7f657e2630c7af833d50">Ball</a> other)</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            <span class="keywordtype">float</span> distance = <a class="code hl_struct" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a>.<a class="code hl_function" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html#ae5c740c00b238eed6abc38b6b607904e">Distance</a>(<a class="code hl_property" href="classBHS_1_1Engine_1_1Scene_1_1SceneObject.html#a25d0373f3aa347cbd38bb93ddf84dd18">Position</a>, other.<a class="code hl_property" href="classBHS_1_1Engine_1_1Scene_1_1SceneObject.html#a25d0373f3aa347cbd38bb93ddf84dd18">Position</a>);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            <span class="keywordflow">return</span> distance &lt;= (<a class="code hl_property" href="classBHS_1_1Engine_1_1Scene_1_1Ball.html#ad3ca4292cbe13f6902829c6850e635b0">Radius</a> + other.<a class="code hl_property" href="classBHS_1_1Engine_1_1Scene_1_1Ball.html#ad3ca4292cbe13f6902829c6850e635b0">Radius</a>);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        }</div>
+</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span></div>
+<div class="foldopen" id="foldopen00040" data-start="{" data-end="}">
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classBHS_1_1Engine_1_1Scene_1_1Ball.html#afdc09834fb870bd1f36a87c81930edf9">   40</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classBHS_1_1Engine_1_1Scene_1_1Ball.html#afdc09834fb870bd1f36a87c81930edf9">ContainsPoint</a>(<a class="code hl_struct" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> point)</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <span class="keywordflow">return</span> <a class="code hl_struct" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a>.<a class="code hl_function" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html#ae5c740c00b238eed6abc38b6b607904e">Distance</a>(<a class="code hl_property" href="classBHS_1_1Engine_1_1Scene_1_1SceneObject.html#a25d0373f3aa347cbd38bb93ddf84dd18">Position</a>, point) &lt;= <a class="code hl_property" href="classBHS_1_1Engine_1_1Scene_1_1Ball.html#ad3ca4292cbe13f6902829c6850e635b0">Radius</a>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        }</div>
+</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span></div>
+<div class="foldopen" id="foldopen00048" data-start="{" data-end="}">
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classBHS_1_1Engine_1_1Scene_1_1Ball.html#afa9c6583c2ca08680ef26b29a293c894">   48</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classBHS_1_1Engine_1_1Scene_1_1Ball.html#afa9c6583c2ca08680ef26b29a293c894">Reflect</a>(<a class="code hl_struct" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> normal)</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        {</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            <a class="code hl_property" href="classBHS_1_1Engine_1_1Scene_1_1Ball.html#ad3e422dfdee7d14b14466ec756f98c81">Velocity</a> = <a class="code hl_struct" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a>.<a class="code hl_function" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html#af8392ed7364e07f42cf3447fd412df96">Reflect</a>(<a class="code hl_property" href="classBHS_1_1Engine_1_1Scene_1_1Ball.html#ad3e422dfdee7d14b14466ec756f98c81">Velocity</a>, normal.<a class="code hl_property" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html#acda3a3ac53bffe8bb9d70dfe32a13cac">Normalized</a>);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        }</div>
+</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span></div>
+<div class="foldopen" id="foldopen00056" data-start="{" data-end="}">
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classBHS_1_1Engine_1_1Scene_1_1Ball.html#a6ac9841bec5d922d8c8f073cbfbbc9db">   56</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classBHS_1_1Engine_1_1Scene_1_1Ball.html#a6ac9841bec5d922d8c8f073cbfbbc9db">Stop</a>()</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <a class="code hl_property" href="classBHS_1_1Engine_1_1Scene_1_1Ball.html#ad3e422dfdee7d14b14466ec756f98c81">Velocity</a> = <a class="code hl_struct" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a>.<a class="code hl_property" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html#a89c246882720eaefda1c7f49bf428d27">Zero</a>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        }</div>
+</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span></div>
+<div class="foldopen" id="foldopen00064" data-start="{" data-end="}">
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="classBHS_1_1Engine_1_1Scene_1_1Ball.html#a2884ba4e05cb1b83771ac872b804e669">   64</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classBHS_1_1Engine_1_1Scene_1_1Ball.html#a2884ba4e05cb1b83771ac872b804e669">SetVelocity</a>(<a class="code hl_struct" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> newVelocity)</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            <a class="code hl_property" href="classBHS_1_1Engine_1_1Scene_1_1Ball.html#ad3e422dfdee7d14b14466ec756f98c81">Velocity</a> = newVelocity;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        }</div>
+</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span></div>
+<div class="foldopen" id="foldopen00072" data-start="{" data-end="}">
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="classBHS_1_1Engine_1_1Scene_1_1Ball.html#adf034245849aa59c47aa5ecf565564c3">   72</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classBHS_1_1Engine_1_1Scene_1_1Ball.html#adf034245849aa59c47aa5ecf565564c3">AddVelocity</a>(<a class="code hl_struct" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> velocityDelta)</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        {</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            <a class="code hl_property" href="classBHS_1_1Engine_1_1Scene_1_1Ball.html#ad3e422dfdee7d14b14466ec756f98c81">Velocity</a> += velocityDelta;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        }</div>
+</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="foldopen" id="foldopen00077" data-start="{" data-end="}">
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="classBHS_1_1Engine_1_1Scene_1_1Ball.html#a0191ad8606a729ceadfc98c38826fd28">   77</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_function" href="classBHS_1_1Engine_1_1Scene_1_1Ball.html#a0191ad8606a729ceadfc98c38826fd28">ToString</a>()</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        {</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            <span class="keywordflow">return</span> $<span class="stringliteral">&quot;Ball (ID: {Id}, Position: {Position}, Radius: {Radius:F2}, Velocity: {Velocity})&quot;</span>;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        }</div>
+</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    }</div>
+</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>}</div>
+</div>
+<div class="ttc" id="aclassBHS_1_1Engine_1_1Scene_1_1Ball_html_a0191ad8606a729ceadfc98c38826fd28"><div class="ttname"><a href="classBHS_1_1Engine_1_1Scene_1_1Ball.html#a0191ad8606a729ceadfc98c38826fd28">BHS.Engine.Scene.Ball.ToString</a></div><div class="ttdeci">override string ToString()</div><div class="ttdef"><b>Определения</b> <a href="#l00077">Ball.cs:77</a></div></div>
+<div class="ttc" id="aclassBHS_1_1Engine_1_1Scene_1_1Ball_html_a0712cbd7faf26368a97376d1bd310d7f"><div class="ttname"><a href="classBHS_1_1Engine_1_1Scene_1_1Ball.html#a0712cbd7faf26368a97376d1bd310d7f">BHS.Engine.Scene.Ball.Mass</a></div><div class="ttdeci">float Mass</div><div class="ttdef"><b>Определения</b> <a href="#l00012">Ball.cs:12</a></div></div>
+<div class="ttc" id="aclassBHS_1_1Engine_1_1Scene_1_1Ball_html_a2884ba4e05cb1b83771ac872b804e669"><div class="ttname"><a href="classBHS_1_1Engine_1_1Scene_1_1Ball.html#a2884ba4e05cb1b83771ac872b804e669">BHS.Engine.Scene.Ball.SetVelocity</a></div><div class="ttdeci">void SetVelocity(Vector2 newVelocity)</div><div class="ttdoc">Устанавливаю новую скорость</div><div class="ttdef"><b>Определения</b> <a href="#l00064">Ball.cs:64</a></div></div>
+<div class="ttc" id="aclassBHS_1_1Engine_1_1Scene_1_1Ball_html_a53b6827b561632b4a0d051bc5a7884c7"><div class="ttname"><a href="classBHS_1_1Engine_1_1Scene_1_1Ball.html#a53b6827b561632b4a0d051bc5a7884c7">BHS.Engine.Scene.Ball.Update</a></div><div class="ttdeci">override void Update(float deltaTime)</div><div class="ttdoc">Двигаю шарик по его скорости</div><div class="ttdef"><b>Определения</b> <a href="#l00023">Ball.cs:23</a></div></div>
+<div class="ttc" id="aclassBHS_1_1Engine_1_1Scene_1_1Ball_html_a6ac9841bec5d922d8c8f073cbfbbc9db"><div class="ttname"><a href="classBHS_1_1Engine_1_1Scene_1_1Ball.html#a6ac9841bec5d922d8c8f073cbfbbc9db">BHS.Engine.Scene.Ball.Stop</a></div><div class="ttdeci">void Stop()</div><div class="ttdoc">Останавливаю шарик</div><div class="ttdef"><b>Определения</b> <a href="#l00056">Ball.cs:56</a></div></div>
+<div class="ttc" id="aclassBHS_1_1Engine_1_1Scene_1_1Ball_html_aab9add9796ce7f657e2630c7af833d50"><div class="ttname"><a href="classBHS_1_1Engine_1_1Scene_1_1Ball.html#aab9add9796ce7f657e2630c7af833d50">BHS.Engine.Scene.Ball.Ball</a></div><div class="ttdeci">Ball(Vector2 position, float radius, Vector2 velocity)</div><div class="ttdef"><b>Определения</b> <a href="#l00014">Ball.cs:14</a></div></div>
+<div class="ttc" id="aclassBHS_1_1Engine_1_1Scene_1_1Ball_html_aac4d9f6b68930ecf2e6e3255564e5e6b"><div class="ttname"><a href="classBHS_1_1Engine_1_1Scene_1_1Ball.html#aac4d9f6b68930ecf2e6e3255564e5e6b">BHS.Engine.Scene.Ball.Intersects</a></div><div class="ttdeci">bool Intersects(Ball other)</div><div class="ttdoc">Проверяю столкновение с другим шариком</div><div class="ttdef"><b>Определения</b> <a href="#l00031">Ball.cs:31</a></div></div>
+<div class="ttc" id="aclassBHS_1_1Engine_1_1Scene_1_1Ball_html_ad3ca4292cbe13f6902829c6850e635b0"><div class="ttname"><a href="classBHS_1_1Engine_1_1Scene_1_1Ball.html#ad3ca4292cbe13f6902829c6850e635b0">BHS.Engine.Scene.Ball.Radius</a></div><div class="ttdeci">float Radius</div><div class="ttdef"><b>Определения</b> <a href="#l00010">Ball.cs:10</a></div></div>
+<div class="ttc" id="aclassBHS_1_1Engine_1_1Scene_1_1Ball_html_ad3e422dfdee7d14b14466ec756f98c81"><div class="ttname"><a href="classBHS_1_1Engine_1_1Scene_1_1Ball.html#ad3e422dfdee7d14b14466ec756f98c81">BHS.Engine.Scene.Ball.Velocity</a></div><div class="ttdeci">Vector2 Velocity</div><div class="ttdef"><b>Определения</b> <a href="#l00011">Ball.cs:11</a></div></div>
+<div class="ttc" id="aclassBHS_1_1Engine_1_1Scene_1_1Ball_html_adf034245849aa59c47aa5ecf565564c3"><div class="ttname"><a href="classBHS_1_1Engine_1_1Scene_1_1Ball.html#adf034245849aa59c47aa5ecf565564c3">BHS.Engine.Scene.Ball.AddVelocity</a></div><div class="ttdeci">void AddVelocity(Vector2 velocityDelta)</div><div class="ttdoc">Добавляю скорость к текущей</div><div class="ttdef"><b>Определения</b> <a href="#l00072">Ball.cs:72</a></div></div>
+<div class="ttc" id="aclassBHS_1_1Engine_1_1Scene_1_1Ball_html_afa9c6583c2ca08680ef26b29a293c894"><div class="ttname"><a href="classBHS_1_1Engine_1_1Scene_1_1Ball.html#afa9c6583c2ca08680ef26b29a293c894">BHS.Engine.Scene.Ball.Reflect</a></div><div class="ttdeci">void Reflect(Vector2 normal)</div><div class="ttdoc">Отражаю шарик от стены по нормали</div><div class="ttdef"><b>Определения</b> <a href="#l00048">Ball.cs:48</a></div></div>
+<div class="ttc" id="aclassBHS_1_1Engine_1_1Scene_1_1Ball_html_afdc09834fb870bd1f36a87c81930edf9"><div class="ttname"><a href="classBHS_1_1Engine_1_1Scene_1_1Ball.html#afdc09834fb870bd1f36a87c81930edf9">BHS.Engine.Scene.Ball.ContainsPoint</a></div><div class="ttdeci">bool ContainsPoint(Vector2 point)</div><div class="ttdoc">Проверяю содержит ли шарик точку</div><div class="ttdef"><b>Определения</b> <a href="#l00040">Ball.cs:40</a></div></div>
+<div class="ttc" id="aclassBHS_1_1Engine_1_1Scene_1_1SceneObject_html_a25d0373f3aa347cbd38bb93ddf84dd18"><div class="ttname"><a href="classBHS_1_1Engine_1_1Scene_1_1SceneObject.html#a25d0373f3aa347cbd38bb93ddf84dd18">BHS.Engine.Scene.SceneObject.Position</a></div><div class="ttdeci">Vector2 Position</div><div class="ttdoc">Позиция объекта в мире</div><div class="ttdef"><b>Определения</b> <a href="SceneObject_8cs_source.html#l00013">SceneObject.cs:13</a></div></div>
+<div class="ttc" id="aclassBHS_1_1Engine_1_1Scene_1_1SceneObject_html_abac8a442bc41f301b61800872fbb9bde"><div class="ttname"><a href="classBHS_1_1Engine_1_1Scene_1_1SceneObject.html#abac8a442bc41f301b61800872fbb9bde">BHS.Engine.Scene.SceneObject.SceneObject</a></div><div class="ttdeci">SceneObject(Vector2 position)</div><div class="ttdef"><b>Определения</b> <a href="SceneObject_8cs_source.html#l00015">SceneObject.cs:15</a></div></div>
+<div class="ttc" id="anamespaceBHS_1_1Engine_1_1Core_1_1Math_html"><div class="ttname"><a href="namespaceBHS_1_1Engine_1_1Core_1_1Math.html">BHS.Engine.Core.Math</a></div><div class="ttdef"><b>Определения</b> <a href="MathHelper_8cs_source.html#l00003">MathHelper.cs:4</a></div></div>
+<div class="ttc" id="anamespaceBHS_1_1Engine_1_1Scene_html"><div class="ttname"><a href="namespaceBHS_1_1Engine_1_1Scene.html">BHS.Engine.Scene</a></div><div class="ttdef"><b>Определения</b> <a href="#l00003">Ball.cs:4</a></div></div>
+<div class="ttc" id="astructBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2_html"><div class="ttname"><a href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">BHS.Engine.Core.Math.Vector2</a></div><div class="ttdoc">2D вектор для позиций и скоростей</div><div class="ttdef"><b>Определения</b> <a href="Vector2_8cs_source.html#l00008">Vector2.cs:9</a></div></div>
+<div class="ttc" id="astructBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2_html_a89c246882720eaefda1c7f49bf428d27"><div class="ttname"><a href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html#a89c246882720eaefda1c7f49bf428d27">BHS.Engine.Core.Math.Vector2.Zero</a></div><div class="ttdeci">static Vector2 Zero</div><div class="ttdef"><b>Определения</b> <a href="Vector2_8cs_source.html#l00019">Vector2.cs:19</a></div></div>
+<div class="ttc" id="astructBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2_html_acda3a3ac53bffe8bb9d70dfe32a13cac"><div class="ttname"><a href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html#acda3a3ac53bffe8bb9d70dfe32a13cac">BHS.Engine.Core.Math.Vector2.Normalized</a></div><div class="ttdeci">Vector2 Normalized</div><div class="ttdoc">Нормализованный вектор</div><div class="ttdef"><b>Определения</b> <a href="Vector2_8cs_source.html#l00035">Vector2.cs:36</a></div></div>
+<div class="ttc" id="astructBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2_html_ae5c740c00b238eed6abc38b6b607904e"><div class="ttname"><a href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html#ae5c740c00b238eed6abc38b6b607904e">BHS.Engine.Core.Math.Vector2.Distance</a></div><div class="ttdeci">static float Distance(Vector2 a, Vector2 b)</div><div class="ttdoc">Расстояние между двумя точками</div></div>
+<div class="ttc" id="astructBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2_html_af8392ed7364e07f42cf3447fd412df96"><div class="ttname"><a href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html#af8392ed7364e07f42cf3447fd412df96">BHS.Engine.Core.Math.Vector2.Reflect</a></div><div class="ttdeci">static Vector2 Reflect(Vector2 vector, Vector2 normal)</div><div class="ttdoc">Отражение вектора от нормали</div><div class="ttdef"><b>Определения</b> <a href="Vector2_8cs_source.html#l00084">Vector2.cs:84</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

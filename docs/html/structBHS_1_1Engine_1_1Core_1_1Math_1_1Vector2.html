@@ -1,0 +1,847 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BHS Claw Engine Test: Структура BHS.Engine.Core.Math.Vector2</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">BHS Claw Engine Test<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Тестовый движок для симуляции физики шарика с коллизиями</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',false);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a href="namespaceBHS.html">BHS</a></li><li class="navelem"><a href="namespaceBHS_1_1Engine.html">Engine</a></li><li class="navelem"><a href="namespaceBHS_1_1Engine_1_1Core.html">Core</a></li><li class="navelem"><a href="namespaceBHS_1_1Engine_1_1Core_1_1Math.html">Math</a></li><li class="navelem"><a href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-static-methods">Открытые статические члены</a> &#124;
+<a href="#properties">Свойства</a> &#124;
+<a href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Структура BHS.Engine.Core.Math.Vector2</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>2D вектор для позиций и скоростей  
+ <a href="#details">Подробнее...</a></p>
+<div class="dynheader">
+Граф наследования:BHS.Engine.Core.Math.Vector2:</div>
+<div class="dyncontent">
+<div class="center"><img src="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2__inherit__graph.png" border="0" usemap="#aBHS_8Engine_8Core_8Math_8Vector2_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<div class="dynheader">
+Граф связей класса BHS.Engine.Core.Math.Vector2:</div>
+<div class="dyncontent">
+<div class="center"><img src="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2__coll__graph.png" border="0" usemap="#aBHS_8Engine_8Core_8Math_8Vector2_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a046c1f86c14060bb032d65c6c9db8067" id="r_a046c1f86c14060bb032d65c6c9db8067"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a046c1f86c14060bb032d65c6c9db8067">Vector2</a> (float x, float y)</td></tr>
+<tr class="memitem:a2636c66a05bfc6c26b9fc69a32a7f583" id="r_a2636c66a05bfc6c26b9fc69a32a7f583"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2636c66a05bfc6c26b9fc69a32a7f583">Equals</a> (<a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> other)</td></tr>
+<tr class="memitem:ac58bbe4d7ee4873e9c646f2820f6fbdf" id="r_ac58bbe4d7ee4873e9c646f2820f6fbdf"><td class="memItemLeft" align="right" valign="top">override bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac58bbe4d7ee4873e9c646f2820f6fbdf">Equals</a> (object obj)</td></tr>
+<tr class="memitem:abfb03755df98d52f1ca5caf9e644c17c" id="r_abfb03755df98d52f1ca5caf9e644c17c"><td class="memItemLeft" align="right" valign="top">override int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abfb03755df98d52f1ca5caf9e644c17c">GetHashCode</a> ()</td></tr>
+<tr class="memitem:a782da19fd7450d2046c68b98eb2020e2" id="r_a782da19fd7450d2046c68b98eb2020e2"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a782da19fd7450d2046c68b98eb2020e2">ToString</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Открытые статические члены</h2></td></tr>
+<tr class="memitem:af8288781463004291668831b662b16de" id="r_af8288781463004291668831b662b16de"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af8288781463004291668831b662b16de">operator+</a> (<a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> a, <a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> b)</td></tr>
+<tr class="memdesc:af8288781463004291668831b662b16de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сложение векторов  <br /></td></tr>
+<tr class="memitem:afbecd234a8a8d96a036af33288b62229" id="r_afbecd234a8a8d96a036af33288b62229"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afbecd234a8a8d96a036af33288b62229">operator-</a> (<a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> a, <a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> b)</td></tr>
+<tr class="memdesc:afbecd234a8a8d96a036af33288b62229"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычитание векторов  <br /></td></tr>
+<tr class="memitem:a0bb2e25b875a79979c0e0991af34fac9" id="r_a0bb2e25b875a79979c0e0991af34fac9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0bb2e25b875a79979c0e0991af34fac9">operator*</a> (<a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> vector, float scalar)</td></tr>
+<tr class="memdesc:a0bb2e25b875a79979c0e0991af34fac9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Умножение на скаляр  <br /></td></tr>
+<tr class="memitem:a615f908ec5f272e730357de85c684fd4" id="r_a615f908ec5f272e730357de85c684fd4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a615f908ec5f272e730357de85c684fd4">operator*</a> (float scalar, <a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> vector)</td></tr>
+<tr class="memdesc:a615f908ec5f272e730357de85c684fd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Умножение скаляра на вектор  <br /></td></tr>
+<tr class="memitem:a6adca8d5276f19944be348b015818fe5" id="r_a6adca8d5276f19944be348b015818fe5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6adca8d5276f19944be348b015818fe5">operator/</a> (<a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> vector, float scalar)</td></tr>
+<tr class="memdesc:a6adca8d5276f19944be348b015818fe5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деление на скаляр  <br /></td></tr>
+<tr class="memitem:adb9cbd3668e06c56860571525d8614a9" id="r_adb9cbd3668e06c56860571525d8614a9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb9cbd3668e06c56860571525d8614a9">operator-</a> (<a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> vector)</td></tr>
+<tr class="memdesc:adb9cbd3668e06c56860571525d8614a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Унарный минус  <br /></td></tr>
+<tr class="memitem:a7001ef4f519c9394b5e60cb1ddea1c0a" id="r_a7001ef4f519c9394b5e60cb1ddea1c0a"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7001ef4f519c9394b5e60cb1ddea1c0a">Dot</a> (<a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> a, <a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> b)</td></tr>
+<tr class="memdesc:a7001ef4f519c9394b5e60cb1ddea1c0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Скалярное произведение  <br /></td></tr>
+<tr class="memitem:af8392ed7364e07f42cf3447fd412df96" id="r_af8392ed7364e07f42cf3447fd412df96"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af8392ed7364e07f42cf3447fd412df96">Reflect</a> (<a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> vector, <a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> normal)</td></tr>
+<tr class="memdesc:af8392ed7364e07f42cf3447fd412df96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отражение вектора от нормали  <br /></td></tr>
+<tr class="memitem:ae5c740c00b238eed6abc38b6b607904e" id="r_ae5c740c00b238eed6abc38b6b607904e"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae5c740c00b238eed6abc38b6b607904e">Distance</a> (<a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> a, <a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> b)</td></tr>
+<tr class="memdesc:ae5c740c00b238eed6abc38b6b607904e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Расстояние между двумя точками  <br /></td></tr>
+<tr class="memitem:a32baa3de7c92a621076ea398f31c8188" id="r_a32baa3de7c92a621076ea398f31c8188"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32baa3de7c92a621076ea398f31c8188">SqrDistance</a> (<a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> a, <a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> b)</td></tr>
+<tr class="memdesc:a32baa3de7c92a621076ea398f31c8188"><td class="mdescLeft">&#160;</td><td class="mdescRight">Квадрат расстояния между двумя точками (для оптимизации)  <br /></td></tr>
+<tr class="memitem:a9a9ec7d1b27cdc2f41fd8954722bdd1e" id="r_a9a9ec7d1b27cdc2f41fd8954722bdd1e"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a9ec7d1b27cdc2f41fd8954722bdd1e">operator==</a> (<a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> left, <a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> right)</td></tr>
+<tr class="memitem:a9e491b50e5c73d12987e5e56f6fc17b6" id="r_a9e491b50e5c73d12987e5e56f6fc17b6"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e491b50e5c73d12987e5e56f6fc17b6">operator!=</a> (<a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> left, <a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> right)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-properties" class="groupheader"><a id="properties" name="properties"></a>
+Свойства</h2></td></tr>
+<tr class="memitem:ae092cce638996c4a2c2d5ad510ef22db" id="r_ae092cce638996c4a2c2d5ad510ef22db"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae092cce638996c4a2c2d5ad510ef22db">X</a><code> [get, set]</code></td></tr>
+<tr class="memitem:aa438f770c0c6c0d84edc06406863741c" id="r_aa438f770c0c6c0d84edc06406863741c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa438f770c0c6c0d84edc06406863741c">Y</a><code> [get, set]</code></td></tr>
+<tr class="memitem:a89c246882720eaefda1c7f49bf428d27" id="r_a89c246882720eaefda1c7f49bf428d27"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a89c246882720eaefda1c7f49bf428d27">Zero</a><code> [get]</code></td></tr>
+<tr class="memitem:a9586ff426bfee42e1cca800619cb82df" id="r_a9586ff426bfee42e1cca800619cb82df"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9586ff426bfee42e1cca800619cb82df">One</a><code> [get]</code></td></tr>
+<tr class="memitem:a166943d2cd957350ca56ce4de6064866" id="r_a166943d2cd957350ca56ce4de6064866"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a166943d2cd957350ca56ce4de6064866">Magnitude</a><code> [get]</code></td></tr>
+<tr class="memdesc:a166943d2cd957350ca56ce4de6064866"><td class="mdescLeft">&#160;</td><td class="mdescRight">Длина вектора  <br /></td></tr>
+<tr class="memitem:aa754771571d478c05529ef7b6918df4a" id="r_aa754771571d478c05529ef7b6918df4a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa754771571d478c05529ef7b6918df4a">SqrMagnitude</a><code> [get]</code></td></tr>
+<tr class="memdesc:aa754771571d478c05529ef7b6918df4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Квадрат длины вектора (для оптимизации)  <br /></td></tr>
+<tr class="memitem:acda3a3ac53bffe8bb9d70dfe32a13cac" id="r_acda3a3ac53bffe8bb9d70dfe32a13cac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acda3a3ac53bffe8bb9d70dfe32a13cac">Normalized</a><code> [get]</code></td></tr>
+<tr class="memdesc:acda3a3ac53bffe8bb9d70dfe32a13cac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Нормализованный вектор  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>2D вектор для позиций и скоростей </p>
+
+<p class="definition">См. определение в файле <a class="el" href="Vector2_8cs_source.html">Vector2.cs</a> строка <a class="el" href="Vector2_8cs_source.html#l00008">8</a></p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Конструктор(ы)</h2>
+<a id="a046c1f86c14060bb032d65c6c9db8067" name="a046c1f86c14060bb032d65c6c9db8067"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a046c1f86c14060bb032d65c6c9db8067">&#9670;&#160;</a></span>Vector2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BHS.Engine.Core.Math.Vector2.Vector2 </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>y</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="Vector2_8cs_source.html">Vector2.cs</a> строка <a class="el" href="Vector2_8cs_source.html#l00013">13</a></p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="ae5c740c00b238eed6abc38b6b607904e" name="ae5c740c00b238eed6abc38b6b607904e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5c740c00b238eed6abc38b6b607904e">&#9670;&#160;</a></span>Distance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float BHS.Engine.Core.Math.Vector2.Distance </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a></td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a></td>          <td class="paramname"><span class="paramname"><em>b</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Расстояние между двумя точками </p>
+
+</div>
+</div>
+<a id="a7001ef4f519c9394b5e60cb1ddea1c0a" name="a7001ef4f519c9394b5e60cb1ddea1c0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7001ef4f519c9394b5e60cb1ddea1c0a">&#9670;&#160;</a></span>Dot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float BHS.Engine.Core.Math.Vector2.Dot </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a></td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a></td>          <td class="paramname"><span class="paramname"><em>b</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Скалярное произведение </p>
+
+</div>
+</div>
+<a id="ac58bbe4d7ee4873e9c646f2820f6fbdf" name="ac58bbe4d7ee4873e9c646f2820f6fbdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac58bbe4d7ee4873e9c646f2820f6fbdf">&#9670;&#160;</a></span>Equals() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override bool BHS.Engine.Core.Math.Vector2.Equals </td>
+          <td>(</td>
+          <td class="paramtype">object</td>          <td class="paramname"><span class="paramname"><em>obj</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="Vector2_8cs_source.html">Vector2.cs</a> строка <a class="el" href="Vector2_8cs_source.html#l00105">105</a></p>
+
+</div>
+</div>
+<a id="a2636c66a05bfc6c26b9fc69a32a7f583" name="a2636c66a05bfc6c26b9fc69a32a7f583"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2636c66a05bfc6c26b9fc69a32a7f583">&#9670;&#160;</a></span>Equals() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool BHS.Engine.Core.Math.Vector2.Equals </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a></td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="Vector2_8cs_source.html">Vector2.cs</a> строка <a class="el" href="Vector2_8cs_source.html#l00100">100</a></p>
+
+</div>
+</div>
+<a id="abfb03755df98d52f1ca5caf9e644c17c" name="abfb03755df98d52f1ca5caf9e644c17c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfb03755df98d52f1ca5caf9e644c17c">&#9670;&#160;</a></span>GetHashCode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override int BHS.Engine.Core.Math.Vector2.GetHashCode </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="Vector2_8cs_source.html">Vector2.cs</a> строка <a class="el" href="Vector2_8cs_source.html#l00110">110</a></p>
+
+</div>
+</div>
+<a id="a9e491b50e5c73d12987e5e56f6fc17b6" name="a9e491b50e5c73d12987e5e56f6fc17b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e491b50e5c73d12987e5e56f6fc17b6">&#9670;&#160;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool BHS.Engine.Core.Math.Vector2.operator!= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a></td>          <td class="paramname"><span class="paramname"><em>left</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a></td>          <td class="paramname"><span class="paramname"><em>right</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="Vector2_8cs_source.html">Vector2.cs</a> строка <a class="el" href="Vector2_8cs_source.html#l00125">125</a></p>
+
+</div>
+</div>
+<a id="a615f908ec5f272e730357de85c684fd4" name="a615f908ec5f272e730357de85c684fd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a615f908ec5f272e730357de85c684fd4">&#9670;&#160;</a></span>operator*() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> BHS.Engine.Core.Math.Vector2.operator* </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>scalar</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a></td>          <td class="paramname"><span class="paramname"><em>vector</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Умножение скаляра на вектор </p>
+
+</div>
+</div>
+<a id="a0bb2e25b875a79979c0e0991af34fac9" name="a0bb2e25b875a79979c0e0991af34fac9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bb2e25b875a79979c0e0991af34fac9">&#9670;&#160;</a></span>operator*() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> BHS.Engine.Core.Math.Vector2.operator* </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a></td>          <td class="paramname"><span class="paramname"><em>vector</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>scalar</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Умножение на скаляр </p>
+
+</div>
+</div>
+<a id="af8288781463004291668831b662b16de" name="af8288781463004291668831b662b16de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8288781463004291668831b662b16de">&#9670;&#160;</a></span>operator+()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> BHS.Engine.Core.Math.Vector2.operator+ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a></td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a></td>          <td class="paramname"><span class="paramname"><em>b</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сложение векторов </p>
+
+</div>
+</div>
+<a id="afbecd234a8a8d96a036af33288b62229" name="afbecd234a8a8d96a036af33288b62229"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbecd234a8a8d96a036af33288b62229">&#9670;&#160;</a></span>operator-() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> BHS.Engine.Core.Math.Vector2.operator- </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a></td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a></td>          <td class="paramname"><span class="paramname"><em>b</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Вычитание векторов </p>
+
+</div>
+</div>
+<a id="adb9cbd3668e06c56860571525d8614a9" name="adb9cbd3668e06c56860571525d8614a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb9cbd3668e06c56860571525d8614a9">&#9670;&#160;</a></span>operator-() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> BHS.Engine.Core.Math.Vector2.operator- </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a></td>          <td class="paramname"><span class="paramname"><em>vector</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Унарный минус </p>
+
+</div>
+</div>
+<a id="a6adca8d5276f19944be348b015818fe5" name="a6adca8d5276f19944be348b015818fe5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6adca8d5276f19944be348b015818fe5">&#9670;&#160;</a></span>operator/()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> BHS.Engine.Core.Math.Vector2.operator/ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a></td>          <td class="paramname"><span class="paramname"><em>vector</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>scalar</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Деление на скаляр </p>
+
+</div>
+</div>
+<a id="a9a9ec7d1b27cdc2f41fd8954722bdd1e" name="a9a9ec7d1b27cdc2f41fd8954722bdd1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a9ec7d1b27cdc2f41fd8954722bdd1e">&#9670;&#160;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool BHS.Engine.Core.Math.Vector2.operator== </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a></td>          <td class="paramname"><span class="paramname"><em>left</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a></td>          <td class="paramname"><span class="paramname"><em>right</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="Vector2_8cs_source.html">Vector2.cs</a> строка <a class="el" href="Vector2_8cs_source.html#l00120">120</a></p>
+
+</div>
+</div>
+<a id="af8392ed7364e07f42cf3447fd412df96" name="af8392ed7364e07f42cf3447fd412df96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8392ed7364e07f42cf3447fd412df96">&#9670;&#160;</a></span>Reflect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> BHS.Engine.Core.Math.Vector2.Reflect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a></td>          <td class="paramname"><span class="paramname"><em>vector</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a></td>          <td class="paramname"><span class="paramname"><em>normal</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Отражение вектора от нормали </p>
+
+<p class="definition">См. определение в файле <a class="el" href="Vector2_8cs_source.html">Vector2.cs</a> строка <a class="el" href="Vector2_8cs_source.html#l00084">84</a></p>
+
+</div>
+</div>
+<a id="a32baa3de7c92a621076ea398f31c8188" name="a32baa3de7c92a621076ea398f31c8188"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32baa3de7c92a621076ea398f31c8188">&#9670;&#160;</a></span>SqrDistance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float BHS.Engine.Core.Math.Vector2.SqrDistance </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a></td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a></td>          <td class="paramname"><span class="paramname"><em>b</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Квадрат расстояния между двумя точками (для оптимизации) </p>
+
+</div>
+</div>
+<a id="a782da19fd7450d2046c68b98eb2020e2" name="a782da19fd7450d2046c68b98eb2020e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a782da19fd7450d2046c68b98eb2020e2">&#9670;&#160;</a></span>ToString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override string BHS.Engine.Core.Math.Vector2.ToString </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="Vector2_8cs_source.html">Vector2.cs</a> строка <a class="el" href="Vector2_8cs_source.html#l00115">115</a></p>
+
+</div>
+</div>
+<a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">Полный список свойств</h2>
+<a id="a166943d2cd957350ca56ce4de6064866" name="a166943d2cd957350ca56ce4de6064866"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a166943d2cd957350ca56ce4de6064866">&#9670;&#160;</a></span>Magnitude</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float BHS.Engine.Core.Math.Vector2.Magnitude</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Длина вектора </p>
+
+<p class="definition">См. определение в файле <a class="el" href="Vector2_8cs_source.html">Vector2.cs</a> строка <a class="el" href="Vector2_8cs_source.html#l00025">25</a></p>
+
+</div>
+</div>
+<a id="acda3a3ac53bffe8bb9d70dfe32a13cac" name="acda3a3ac53bffe8bb9d70dfe32a13cac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acda3a3ac53bffe8bb9d70dfe32a13cac">&#9670;&#160;</a></span>Normalized</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> BHS.Engine.Core.Math.Vector2.Normalized</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Нормализованный вектор </p>
+
+<p class="definition">См. определение в файле <a class="el" href="Vector2_8cs_source.html">Vector2.cs</a> строка <a class="el" href="Vector2_8cs_source.html#l00035">35</a></p>
+
+</div>
+</div>
+<a id="a9586ff426bfee42e1cca800619cb82df" name="a9586ff426bfee42e1cca800619cb82df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9586ff426bfee42e1cca800619cb82df">&#9670;&#160;</a></span>One</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> BHS.Engine.Core.Math.Vector2.One</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="Vector2_8cs_source.html">Vector2.cs</a> строка <a class="el" href="Vector2_8cs_source.html#l00020">20</a></p>
+
+</div>
+</div>
+<a id="aa754771571d478c05529ef7b6918df4a" name="aa754771571d478c05529ef7b6918df4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa754771571d478c05529ef7b6918df4a">&#9670;&#160;</a></span>SqrMagnitude</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float BHS.Engine.Core.Math.Vector2.SqrMagnitude</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Квадрат длины вектора (для оптимизации) </p>
+
+<p class="definition">См. определение в файле <a class="el" href="Vector2_8cs_source.html">Vector2.cs</a> строка <a class="el" href="Vector2_8cs_source.html#l00030">30</a></p>
+
+</div>
+</div>
+<a id="ae092cce638996c4a2c2d5ad510ef22db" name="ae092cce638996c4a2c2d5ad510ef22db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae092cce638996c4a2c2d5ad510ef22db">&#9670;&#160;</a></span>X</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float BHS.Engine.Core.Math.Vector2.X</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="Vector2_8cs_source.html">Vector2.cs</a> строка <a class="el" href="Vector2_8cs_source.html#l00010">10</a></p>
+
+</div>
+</div>
+<a id="aa438f770c0c6c0d84edc06406863741c" name="aa438f770c0c6c0d84edc06406863741c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa438f770c0c6c0d84edc06406863741c">&#9670;&#160;</a></span>Y</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float BHS.Engine.Core.Math.Vector2.Y</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="Vector2_8cs_source.html">Vector2.cs</a> строка <a class="el" href="Vector2_8cs_source.html#l00011">11</a></p>
+
+</div>
+</div>
+<a id="a89c246882720eaefda1c7f49bf428d27" name="a89c246882720eaefda1c7f49bf428d27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89c246882720eaefda1c7f49bf428d27">&#9670;&#160;</a></span>Zero</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> BHS.Engine.Core.Math.Vector2.Zero</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="Vector2_8cs_source.html">Vector2.cs</a> строка <a class="el" href="Vector2_8cs_source.html#l00019">19</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов структуры находятся в файле:<ul>
+<li>src/Core/Math/<a class="el" href="Vector2_8cs_source.html">Vector2.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

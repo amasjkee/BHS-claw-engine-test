@@ -1,0 +1,543 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BHS Claw Engine Test: Класс BHS.Engine.ECS.EcsWorldManager</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">BHS Claw Engine Test<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Тестовый движок для симуляции физики шарика с коллизиями</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',false);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a href="namespaceBHS.html">BHS</a></li><li class="navelem"><a href="namespaceBHS_1_1Engine.html">Engine</a></li><li class="navelem"><a href="namespaceBHS_1_1Engine_1_1ECS.html">ECS</a></li><li class="navelem"><a href="classBHS_1_1Engine_1_1ECS_1_1EcsWorldManager.html">EcsWorldManager</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#properties">Свойства</a> &#124;
+<a href="classBHS_1_1Engine_1_1ECS_1_1EcsWorldManager-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс BHS.Engine.ECS.EcsWorldManager</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Менеджер <a class="el" href="namespaceBHS_1_1Engine_1_1ECS.html">ECS</a> мира - создаю сущности и управляю системами  
+ <a href="#details">Подробнее...</a></p>
+<div class="dynheader">
+Граф наследования:BHS.Engine.ECS.EcsWorldManager:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBHS_1_1Engine_1_1ECS_1_1EcsWorldManager__inherit__graph.png" border="0" usemap="#aBHS_8Engine_8ECS_8EcsWorldManager_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<div class="dynheader">
+Граф связей класса BHS.Engine.ECS.EcsWorldManager:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBHS_1_1Engine_1_1ECS_1_1EcsWorldManager__coll__graph.png" border="0" usemap="#aBHS_8Engine_8ECS_8EcsWorldManager_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a915821a2cb5284088a280de3acce8912" id="r_a915821a2cb5284088a280de3acce8912"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a915821a2cb5284088a280de3acce8912">EcsWorldManager</a> ()</td></tr>
+<tr class="memitem:a0ec09f2131b12a5d8ade119b68d00f29" id="r_a0ec09f2131b12a5d8ade119b68d00f29"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ec09f2131b12a5d8ade119b68d00f29">CreateBallEntity</a> (<a class="el" href="classBHS_1_1Engine_1_1Scene_1_1Ball.html">Ball</a> ball)</td></tr>
+<tr class="memdesc:a0ec09f2131b12a5d8ade119b68d00f29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создаю <a class="el" href="namespaceBHS_1_1Engine_1_1ECS.html">ECS</a> сущность для шарика  <br /></td></tr>
+<tr class="memitem:ac98bac2f87ff3274d1310cf4533351be" id="r_ac98bac2f87ff3274d1310cf4533351be"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac98bac2f87ff3274d1310cf4533351be">CreateWallEntity</a> (<a class="el" href="classBHS_1_1Engine_1_1Scene_1_1Wall.html">Wall</a> wall, int wallId=0)</td></tr>
+<tr class="memdesc:ac98bac2f87ff3274d1310cf4533351be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создаю <a class="el" href="namespaceBHS_1_1Engine_1_1ECS.html">ECS</a> сущность для стены  <br /></td></tr>
+<tr class="memitem:a5c682d715520f9e099c4c6bf0788e0b6" id="r_a5c682d715520f9e099c4c6bf0788e0b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c682d715520f9e099c4c6bf0788e0b6">InitializeScene</a> (<a class="el" href="classBHS_1_1Engine_1_1Scene_1_1GameScene.html">GameScene</a> scene)</td></tr>
+<tr class="memdesc:a5c682d715520f9e099c4c6bf0788e0b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализирую сцену в <a class="el" href="namespaceBHS_1_1Engine_1_1ECS.html">ECS</a> - создаю сущности для всех объектов  <br /></td></tr>
+<tr class="memitem:a4ed3e8696e45904045154422ee3cc713" id="r_a4ed3e8696e45904045154422ee3cc713"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ed3e8696e45904045154422ee3cc713">Update</a> ()</td></tr>
+<tr class="memdesc:a4ed3e8696e45904045154422ee3cc713"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обновляю <a class="el" href="namespaceBHS_1_1Engine_1_1ECS.html">ECS</a> мир каждый кадр  <br /></td></tr>
+<tr class="memitem:a8fff3fd00deb96538f41f637165c2de8" id="r_a8fff3fd00deb96538f41f637165c2de8"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8fff3fd00deb96538f41f637165c2de8">GetWorldInfo</a> ()</td></tr>
+<tr class="memdesc:a8fff3fd00deb96538f41f637165c2de8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получаю информацию о количестве сущностей  <br /></td></tr>
+<tr class="memitem:a2e1c42c25c95dd3e5a5b87f305139ec1" id="r_a2e1c42c25c95dd3e5a5b87f305139ec1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBHS_1_1Engine_1_1Scene_1_1GameScene.html">GameScene</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e1c42c25c95dd3e5a5b87f305139ec1">CreateTestScene</a> ()</td></tr>
+<tr class="memdesc:a2e1c42c25c95dd3e5a5b87f305139ec1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создаю простую тестовую сцену с коробочкой и шариком  <br /></td></tr>
+<tr class="memitem:ac1721492ed63eadf6e77105a0ac69bf6" id="r_ac1721492ed63eadf6e77105a0ac69bf6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBHS_1_1Engine_1_1Scene_1_1GameScene.html">GameScene</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac1721492ed63eadf6e77105a0ac69bf6">CreateAdvancedTestScene</a> ()</td></tr>
+<tr class="memdesc:ac1721492ed63eadf6e77105a0ac69bf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создаю продвинутую сцену только с коробочкой для GUI режима  <br /></td></tr>
+<tr class="memitem:a081ea5a64bf26aeb5144694103e17420" id="r_a081ea5a64bf26aeb5144694103e17420"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBHS_1_1Engine_1_1Scene_1_1GameScene.html">GameScene</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a081ea5a64bf26aeb5144694103e17420">CreateSceneWithRandomWall</a> ()</td></tr>
+<tr class="memdesc:a081ea5a64bf26aeb5144694103e17420"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создаю сцену с рандомной стеной внутри коробки (фиксированного размера)  <br /></td></tr>
+<tr class="memitem:a1f40ab0fa74c4ebebcf545b4e135881a" id="r_a1f40ab0fa74c4ebebcf545b4e135881a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBHS_1_1Engine_1_1Scene_1_1GameScene.html">GameScene</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f40ab0fa74c4ebebcf545b4e135881a">CreateConsoleTestScene</a> ()</td></tr>
+<tr class="memdesc:a1f40ab0fa74c4ebebcf545b4e135881a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создаю сцену для консольного режима с неподвижным шариком  <br /></td></tr>
+<tr class="memitem:a546e34a1a56bfb3948abeb0d91d24bb5" id="r_a546e34a1a56bfb3948abeb0d91d24bb5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a546e34a1a56bfb3948abeb0d91d24bb5">AddBallToEcs</a> (<a class="el" href="classBHS_1_1Engine_1_1Scene_1_1Ball.html">Ball</a> ball)</td></tr>
+<tr class="memdesc:a546e34a1a56bfb3948abeb0d91d24bb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавляет шарик в <a class="el" href="namespaceBHS_1_1Engine_1_1ECS.html">ECS</a> мир  <br /></td></tr>
+<tr class="memitem:ab05d8fe4764cf6e6a938e9517ca0cdf7" id="r_ab05d8fe4764cf6e6a938e9517ca0cdf7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab05d8fe4764cf6e6a938e9517ca0cdf7">Dispose</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-properties" class="groupheader"><a id="properties" name="properties"></a>
+Свойства</h2></td></tr>
+<tr class="memitem:a6559ae47c40bd1c3915b301c7f9b3966" id="r_a6559ae47c40bd1c3915b301c7f9b3966"><td class="memItemLeft" align="right" valign="top">EcsWorld&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6559ae47c40bd1c3915b301c7f9b3966">World</a><code> [get]</code></td></tr>
+<tr class="memitem:aaa7888ffa69c0d1b59f86c8548f5c534" id="r_aaa7888ffa69c0d1b59f86c8548f5c534"><td class="memItemLeft" align="right" valign="top">EcsSystems&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa7888ffa69c0d1b59f86c8548f5c534">Systems</a><code> [get]</code></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Менеджер <a class="el" href="namespaceBHS_1_1Engine_1_1ECS.html">ECS</a> мира - создаю сущности и управляю системами </p>
+
+<p class="definition">См. определение в файле <a class="el" href="EcsWorldManager_8cs_source.html">EcsWorldManager.cs</a> строка <a class="el" href="EcsWorldManager_8cs_source.html#l00013">13</a></p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Конструктор(ы)</h2>
+<a id="a915821a2cb5284088a280de3acce8912" name="a915821a2cb5284088a280de3acce8912"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a915821a2cb5284088a280de3acce8912">&#9670;&#160;</a></span>EcsWorldManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BHS.Engine.ECS.EcsWorldManager.EcsWorldManager </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="EcsWorldManager_8cs_source.html">EcsWorldManager.cs</a> строка <a class="el" href="EcsWorldManager_8cs_source.html#l00022">22</a></p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="a546e34a1a56bfb3948abeb0d91d24bb5" name="a546e34a1a56bfb3948abeb0d91d24bb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a546e34a1a56bfb3948abeb0d91d24bb5">&#9670;&#160;</a></span>AddBallToEcs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BHS.Engine.ECS.EcsWorldManager.AddBallToEcs </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classBHS_1_1Engine_1_1Scene_1_1Ball.html">Ball</a></td>          <td class="paramname"><span class="paramname"><em>ball</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Добавляет шарик в <a class="el" href="namespaceBHS_1_1Engine_1_1ECS.html">ECS</a> мир </p>
+
+<p class="definition">См. определение в файле <a class="el" href="EcsWorldManager_8cs_source.html">EcsWorldManager.cs</a> строка <a class="el" href="EcsWorldManager_8cs_source.html#l00208">208</a></p>
+
+</div>
+</div>
+<a id="ac1721492ed63eadf6e77105a0ac69bf6" name="ac1721492ed63eadf6e77105a0ac69bf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1721492ed63eadf6e77105a0ac69bf6">&#9670;&#160;</a></span>CreateAdvancedTestScene()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classBHS_1_1Engine_1_1Scene_1_1GameScene.html">GameScene</a> BHS.Engine.ECS.EcsWorldManager.CreateAdvancedTestScene </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Создаю продвинутую сцену только с коробочкой для GUI режима </p>
+
+<p class="definition">См. определение в файле <a class="el" href="EcsWorldManager_8cs_source.html">EcsWorldManager.cs</a> строка <a class="el" href="EcsWorldManager_8cs_source.html#l00142">142</a></p>
+
+</div>
+</div>
+<a id="a0ec09f2131b12a5d8ade119b68d00f29" name="a0ec09f2131b12a5d8ade119b68d00f29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ec09f2131b12a5d8ade119b68d00f29">&#9670;&#160;</a></span>CreateBallEntity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int BHS.Engine.ECS.EcsWorldManager.CreateBallEntity </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classBHS_1_1Engine_1_1Scene_1_1Ball.html">Ball</a></td>          <td class="paramname"><span class="paramname"><em>ball</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Создаю <a class="el" href="namespaceBHS_1_1Engine_1_1ECS.html">ECS</a> сущность для шарика </p>
+
+<p class="definition">См. определение в файле <a class="el" href="EcsWorldManager_8cs_source.html">EcsWorldManager.cs</a> строка <a class="el" href="EcsWorldManager_8cs_source.html#l00044">44</a></p>
+
+</div>
+</div>
+<a id="a1f40ab0fa74c4ebebcf545b4e135881a" name="a1f40ab0fa74c4ebebcf545b4e135881a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f40ab0fa74c4ebebcf545b4e135881a">&#9670;&#160;</a></span>CreateConsoleTestScene()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classBHS_1_1Engine_1_1Scene_1_1GameScene.html">GameScene</a> BHS.Engine.ECS.EcsWorldManager.CreateConsoleTestScene </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Создаю сцену для консольного режима с неподвижным шариком </p>
+
+<p class="definition">См. определение в файле <a class="el" href="EcsWorldManager_8cs_source.html">EcsWorldManager.cs</a> строка <a class="el" href="EcsWorldManager_8cs_source.html#l00189">189</a></p>
+
+</div>
+</div>
+<a id="a081ea5a64bf26aeb5144694103e17420" name="a081ea5a64bf26aeb5144694103e17420"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a081ea5a64bf26aeb5144694103e17420">&#9670;&#160;</a></span>CreateSceneWithRandomWall()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classBHS_1_1Engine_1_1Scene_1_1GameScene.html">GameScene</a> BHS.Engine.ECS.EcsWorldManager.CreateSceneWithRandomWall </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Создаю сцену с рандомной стеной внутри коробки (фиксированного размера) </p>
+
+<p class="definition">См. определение в файле <a class="el" href="EcsWorldManager_8cs_source.html">EcsWorldManager.cs</a> строка <a class="el" href="EcsWorldManager_8cs_source.html#l00156">156</a></p>
+
+</div>
+</div>
+<a id="a2e1c42c25c95dd3e5a5b87f305139ec1" name="a2e1c42c25c95dd3e5a5b87f305139ec1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e1c42c25c95dd3e5a5b87f305139ec1">&#9670;&#160;</a></span>CreateTestScene()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classBHS_1_1Engine_1_1Scene_1_1GameScene.html">GameScene</a> BHS.Engine.ECS.EcsWorldManager.CreateTestScene </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Создаю простую тестовую сцену с коробочкой и шариком </p>
+
+<p class="definition">См. определение в файле <a class="el" href="EcsWorldManager_8cs_source.html">EcsWorldManager.cs</a> строка <a class="el" href="EcsWorldManager_8cs_source.html#l00123">123</a></p>
+
+</div>
+</div>
+<a id="ac98bac2f87ff3274d1310cf4533351be" name="ac98bac2f87ff3274d1310cf4533351be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac98bac2f87ff3274d1310cf4533351be">&#9670;&#160;</a></span>CreateWallEntity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int BHS.Engine.ECS.EcsWorldManager.CreateWallEntity </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classBHS_1_1Engine_1_1Scene_1_1Wall.html">Wall</a></td>          <td class="paramname"><span class="paramname"><em>wall</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>wallId</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Создаю <a class="el" href="namespaceBHS_1_1Engine_1_1ECS.html">ECS</a> сущность для стены </p>
+
+<p class="definition">См. определение в файле <a class="el" href="EcsWorldManager_8cs_source.html">EcsWorldManager.cs</a> строка <a class="el" href="EcsWorldManager_8cs_source.html#l00062">62</a></p>
+
+</div>
+</div>
+<a id="ab05d8fe4764cf6e6a938e9517ca0cdf7" name="ab05d8fe4764cf6e6a938e9517ca0cdf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab05d8fe4764cf6e6a938e9517ca0cdf7">&#9670;&#160;</a></span>Dispose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BHS.Engine.ECS.EcsWorldManager.Dispose </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="EcsWorldManager_8cs_source.html">EcsWorldManager.cs</a> строка <a class="el" href="EcsWorldManager_8cs_source.html#l00225">225</a></p>
+
+</div>
+</div>
+<a id="a8fff3fd00deb96538f41f637165c2de8" name="a8fff3fd00deb96538f41f637165c2de8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fff3fd00deb96538f41f637165c2de8">&#9670;&#160;</a></span>GetWorldInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string BHS.Engine.ECS.EcsWorldManager.GetWorldInfo </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Получаю информацию о количестве сущностей </p>
+
+<p class="definition">См. определение в файле <a class="el" href="EcsWorldManager_8cs_source.html">EcsWorldManager.cs</a> строка <a class="el" href="EcsWorldManager_8cs_source.html#l00110">110</a></p>
+
+</div>
+</div>
+<a id="a5c682d715520f9e099c4c6bf0788e0b6" name="a5c682d715520f9e099c4c6bf0788e0b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c682d715520f9e099c4c6bf0788e0b6">&#9670;&#160;</a></span>InitializeScene()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BHS.Engine.ECS.EcsWorldManager.InitializeScene </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classBHS_1_1Engine_1_1Scene_1_1GameScene.html">GameScene</a></td>          <td class="paramname"><span class="paramname"><em>scene</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Инициализирую сцену в <a class="el" href="namespaceBHS_1_1Engine_1_1ECS.html">ECS</a> - создаю сущности для всех объектов </p>
+
+<p class="definition">См. определение в файле <a class="el" href="EcsWorldManager_8cs_source.html">EcsWorldManager.cs</a> строка <a class="el" href="EcsWorldManager_8cs_source.html#l00079">79</a></p>
+
+</div>
+</div>
+<a id="a4ed3e8696e45904045154422ee3cc713" name="a4ed3e8696e45904045154422ee3cc713"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ed3e8696e45904045154422ee3cc713">&#9670;&#160;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BHS.Engine.ECS.EcsWorldManager.Update </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Обновляю <a class="el" href="namespaceBHS_1_1Engine_1_1ECS.html">ECS</a> мир каждый кадр </p>
+
+<p class="definition">См. определение в файле <a class="el" href="EcsWorldManager_8cs_source.html">EcsWorldManager.cs</a> строка <a class="el" href="EcsWorldManager_8cs_source.html#l00099">99</a></p>
+
+</div>
+</div>
+<a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">Полный список свойств</h2>
+<a id="aaa7888ffa69c0d1b59f86c8548f5c534" name="aaa7888ffa69c0d1b59f86c8548f5c534"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa7888ffa69c0d1b59f86c8548f5c534">&#9670;&#160;</a></span>Systems</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">EcsSystems BHS.Engine.ECS.EcsWorldManager.Systems</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="EcsWorldManager_8cs_source.html">EcsWorldManager.cs</a> строка <a class="el" href="EcsWorldManager_8cs_source.html#l00020">20</a></p>
+
+</div>
+</div>
+<a id="a6559ae47c40bd1c3915b301c7f9b3966" name="a6559ae47c40bd1c3915b301c7f9b3966"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6559ae47c40bd1c3915b301c7f9b3966">&#9670;&#160;</a></span>World</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">EcsWorld BHS.Engine.ECS.EcsWorldManager.World</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="EcsWorldManager_8cs_source.html">EcsWorldManager.cs</a> строка <a class="el" href="EcsWorldManager_8cs_source.html#l00019">19</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>src/ECS/<a class="el" href="EcsWorldManager_8cs_source.html">EcsWorldManager.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

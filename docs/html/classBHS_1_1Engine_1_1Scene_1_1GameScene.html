@@ -1,0 +1,612 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BHS Claw Engine Test: Класс BHS.Engine.Scene.GameScene</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">BHS Claw Engine Test<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Тестовый движок для симуляции физики шарика с коллизиями</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',false);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a href="namespaceBHS.html">BHS</a></li><li class="navelem"><a href="namespaceBHS_1_1Engine.html">Engine</a></li><li class="navelem"><a href="namespaceBHS_1_1Engine_1_1Scene.html">Scene</a></li><li class="navelem"><a href="classBHS_1_1Engine_1_1Scene_1_1GameScene.html">GameScene</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#properties">Свойства</a> &#124;
+<a href="classBHS_1_1Engine_1_1Scene_1_1GameScene-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс BHS.Engine.Scene.GameScene</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Контейнер для управления объектами сцены - стенами и шариками  
+ <a href="#details">Подробнее...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:afe364b5649264f4765b4dcde6a6d3e44" id="r_afe364b5649264f4765b4dcde6a6d3e44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe364b5649264f4765b4dcde6a6d3e44">AddObject</a> (<a class="el" href="interfaceBHS_1_1Engine_1_1Core_1_1Interfaces_1_1ISceneObject.html">ISceneObject</a> sceneObject)</td></tr>
+<tr class="memdesc:afe364b5649264f4765b4dcde6a6d3e44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавляю объект в сцену  <br /></td></tr>
+<tr class="memitem:a5b05d3e3516d4cf5ce99471e889e6d45" id="r_a5b05d3e3516d4cf5ce99471e889e6d45"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b05d3e3516d4cf5ce99471e889e6d45">RemoveObject</a> (<a class="el" href="interfaceBHS_1_1Engine_1_1Core_1_1Interfaces_1_1ISceneObject.html">ISceneObject</a> sceneObject)</td></tr>
+<tr class="memdesc:a5b05d3e3516d4cf5ce99471e889e6d45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удаляю объект из сцены  <br /></td></tr>
+<tr class="memitem:a37f23ff5f1ef0232a025e07ef77dc6a1" id="r_a37f23ff5f1ef0232a025e07ef77dc6a1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a37f23ff5f1ef0232a025e07ef77dc6a1">RemoveObject</a> (Guid id)</td></tr>
+<tr class="memdesc:a37f23ff5f1ef0232a025e07ef77dc6a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удаляю объект по ID.  <br /></td></tr>
+<tr class="memitem:af2f2074076382f7fbea93807a3e15f1c" id="r_af2f2074076382f7fbea93807a3e15f1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfaceBHS_1_1Engine_1_1Core_1_1Interfaces_1_1ISceneObject.html">ISceneObject</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af2f2074076382f7fbea93807a3e15f1c">FindObject</a> (Guid id)</td></tr>
+<tr class="memdesc:af2f2074076382f7fbea93807a3e15f1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Нахожу объект по ID.  <br /></td></tr>
+<tr class="memitem:ae268d2ee96be9bea98632b9980fb6cd2" id="r_ae268d2ee96be9bea98632b9980fb6cd2"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae268d2ee96be9bea98632b9980fb6cd2">FindObject&lt; T &gt;</a> ()</td></tr>
+<tr class="memdesc:ae268d2ee96be9bea98632b9980fb6cd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Нахожу объект по типу  <br /></td></tr>
+<tr class="memitem:a0acd236441971656ca724dc38b55e345" id="r_a0acd236441971656ca724dc38b55e345"><td class="memItemLeft" align="right" valign="top">IEnumerable&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0acd236441971656ca724dc38b55e345">FindObjects&lt; T &gt;</a> ()</td></tr>
+<tr class="memdesc:a0acd236441971656ca724dc38b55e345"><td class="mdescLeft">&#160;</td><td class="mdescRight">Нахожу все объекты определенного типа  <br /></td></tr>
+<tr class="memitem:a793bc05f8999eb405ade7a73ee8d4f8b" id="r_a793bc05f8999eb405ade7a73ee8d4f8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a793bc05f8999eb405ade7a73ee8d4f8b">Update</a> (float deltaTime)</td></tr>
+<tr class="memdesc:a793bc05f8999eb405ade7a73ee8d4f8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обновляю все объекты сцены  <br /></td></tr>
+<tr class="memitem:a91ec07e7c1728174f395df642192c74d" id="r_a91ec07e7c1728174f395df642192c74d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91ec07e7c1728174f395df642192c74d">Clear</a> ()</td></tr>
+<tr class="memdesc:a91ec07e7c1728174f395df642192c74d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Очищаю всю сцену  <br /></td></tr>
+<tr class="memitem:a04ed687c56c6a9162a905600651be247" id="r_a04ed687c56c6a9162a905600651be247"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04ed687c56c6a9162a905600651be247">ClearBalls</a> ()</td></tr>
+<tr class="memdesc:a04ed687c56c6a9162a905600651be247"><td class="mdescLeft">&#160;</td><td class="mdescRight">Очищаю только шарики  <br /></td></tr>
+<tr class="memitem:a9a4f73bcf38ea9102ce2fe0af88c0649" id="r_a9a4f73bcf38ea9102ce2fe0af88c0649"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a4f73bcf38ea9102ce2fe0af88c0649">CreateBox</a> (<a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> min, <a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> max)</td></tr>
+<tr class="memdesc:a9a4f73bcf38ea9102ce2fe0af88c0649"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создаю прямоугольную коробочку из стен  <br /></td></tr>
+<tr class="memitem:a1f1349f4d12bfa3ec8912180a20e3196" id="r_a1f1349f4d12bfa3ec8912180a20e3196"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBHS_1_1Engine_1_1Scene_1_1Ball.html">Ball</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f1349f4d12bfa3ec8912180a20e3196">CreateBall</a> (<a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> position, float radius, <a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> velocity)</td></tr>
+<tr class="memdesc:a1f1349f4d12bfa3ec8912180a20e3196"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создаю шарик в сцене  <br /></td></tr>
+<tr class="memitem:af9cf19f7617d17596c21025405e666a8" id="r_af9cf19f7617d17596c21025405e666a8"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af9cf19f7617d17596c21025405e666a8">ToString</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-properties" class="groupheader"><a id="properties" name="properties"></a>
+Свойства</h2></td></tr>
+<tr class="memitem:a10e000af67053dd04c3e009c4f3050ab" id="r_a10e000af67053dd04c3e009c4f3050ab"><td class="memItemLeft" align="right" valign="top">IReadOnlyList&lt; <a class="el" href="interfaceBHS_1_1Engine_1_1Core_1_1Interfaces_1_1ISceneObject.html">ISceneObject</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10e000af67053dd04c3e009c4f3050ab">Objects</a><code> [get]</code></td></tr>
+<tr class="memitem:ab6647ebf27c0446465de93378329c75d" id="r_ab6647ebf27c0446465de93378329c75d"><td class="memItemLeft" align="right" valign="top">IReadOnlyList&lt; <a class="el" href="classBHS_1_1Engine_1_1Scene_1_1Wall.html">Wall</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6647ebf27c0446465de93378329c75d">Walls</a><code> [get]</code></td></tr>
+<tr class="memitem:aaee11c76a192704a1aea10098936a48b" id="r_aaee11c76a192704a1aea10098936a48b"><td class="memItemLeft" align="right" valign="top">IReadOnlyList&lt; <a class="el" href="classBHS_1_1Engine_1_1Scene_1_1Ball.html">Ball</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaee11c76a192704a1aea10098936a48b">Balls</a><code> [get]</code></td></tr>
+<tr class="memitem:a6e8b36a3d9c92be1af83ee8df8106e8c" id="r_a6e8b36a3d9c92be1af83ee8df8106e8c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e8b36a3d9c92be1af83ee8df8106e8c">ObjectCount</a><code> [get]</code></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Контейнер для управления объектами сцены - стенами и шариками </p>
+
+<p class="definition">См. определение в файле <a class="el" href="Scene_8cs_source.html">Scene.cs</a> строка <a class="el" href="Scene_8cs_source.html#l00012">12</a></p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="afe364b5649264f4765b4dcde6a6d3e44" name="afe364b5649264f4765b4dcde6a6d3e44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe364b5649264f4765b4dcde6a6d3e44">&#9670;&#160;</a></span>AddObject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BHS.Engine.Scene.GameScene.AddObject </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfaceBHS_1_1Engine_1_1Core_1_1Interfaces_1_1ISceneObject.html">ISceneObject</a></td>          <td class="paramname"><span class="paramname"><em>sceneObject</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Добавляю объект в сцену </p>
+
+<p class="definition">См. определение в файле <a class="el" href="Scene_8cs_source.html">Scene.cs</a> строка <a class="el" href="Scene_8cs_source.html#l00026">26</a></p>
+
+</div>
+</div>
+<a id="a91ec07e7c1728174f395df642192c74d" name="a91ec07e7c1728174f395df642192c74d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91ec07e7c1728174f395df642192c74d">&#9670;&#160;</a></span>Clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BHS.Engine.Scene.GameScene.Clear </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Очищаю всю сцену </p>
+
+<p class="definition">См. определение в файле <a class="el" href="Scene_8cs_source.html">Scene.cs</a> строка <a class="el" href="Scene_8cs_source.html#l00120">120</a></p>
+
+</div>
+</div>
+<a id="a04ed687c56c6a9162a905600651be247" name="a04ed687c56c6a9162a905600651be247"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04ed687c56c6a9162a905600651be247">&#9670;&#160;</a></span>ClearBalls()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BHS.Engine.Scene.GameScene.ClearBalls </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Очищаю только шарики </p>
+
+<p class="definition">См. определение в файле <a class="el" href="Scene_8cs_source.html">Scene.cs</a> строка <a class="el" href="Scene_8cs_source.html#l00130">130</a></p>
+
+</div>
+</div>
+<a id="a1f1349f4d12bfa3ec8912180a20e3196" name="a1f1349f4d12bfa3ec8912180a20e3196"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f1349f4d12bfa3ec8912180a20e3196">&#9670;&#160;</a></span>CreateBall()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classBHS_1_1Engine_1_1Scene_1_1Ball.html">Ball</a> BHS.Engine.Scene.GameScene.CreateBall </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a></td>          <td class="paramname"><span class="paramname"><em>position</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>radius</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a></td>          <td class="paramname"><span class="paramname"><em>velocity</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Создаю шарик в сцене </p>
+
+<p class="definition">См. определение в файле <a class="el" href="Scene_8cs_source.html">Scene.cs</a> строка <a class="el" href="Scene_8cs_source.html#l00150">150</a></p>
+
+</div>
+</div>
+<a id="a9a4f73bcf38ea9102ce2fe0af88c0649" name="a9a4f73bcf38ea9102ce2fe0af88c0649"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a4f73bcf38ea9102ce2fe0af88c0649">&#9670;&#160;</a></span>CreateBox()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BHS.Engine.Scene.GameScene.CreateBox </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a></td>          <td class="paramname"><span class="paramname"><em>min</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a></td>          <td class="paramname"><span class="paramname"><em>max</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Создаю прямоугольную коробочку из стен </p>
+
+<p class="definition">См. определение в файле <a class="el" href="Scene_8cs_source.html">Scene.cs</a> строка <a class="el" href="Scene_8cs_source.html#l00139">139</a></p>
+
+</div>
+</div>
+<a id="af2f2074076382f7fbea93807a3e15f1c" name="af2f2074076382f7fbea93807a3e15f1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2f2074076382f7fbea93807a3e15f1c">&#9670;&#160;</a></span>FindObject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfaceBHS_1_1Engine_1_1Core_1_1Interfaces_1_1ISceneObject.html">ISceneObject</a> BHS.Engine.Scene.GameScene.FindObject </td>
+          <td>(</td>
+          <td class="paramtype">Guid</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Нахожу объект по ID. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="Scene_8cs_source.html">Scene.cs</a> строка <a class="el" href="Scene_8cs_source.html#l00082">82</a></p>
+
+</div>
+</div>
+<a id="ae268d2ee96be9bea98632b9980fb6cd2" name="ae268d2ee96be9bea98632b9980fb6cd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae268d2ee96be9bea98632b9980fb6cd2">&#9670;&#160;</a></span>FindObject&lt; T &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T <a class="el" href="#af2f2074076382f7fbea93807a3e15f1c">BHS.Engine.Scene.GameScene.FindObject</a>&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Нахожу объект по типу </p>
+<div class="typeconstraint">
+<dl><dt><b>Согласование типов</b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em>class</em></td><td>&#160;</td></tr>
+<tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em>ISceneObject</em></td><td>&#160;</td></tr>
+</table>
+</dd>
+</dl>
+</div>
+
+<p class="definition">См. определение в файле <a class="el" href="Scene_8cs_source.html">Scene.cs</a> строка <a class="el" href="Scene_8cs_source.html#l00090">90</a></p>
+
+</div>
+</div>
+<a id="a0acd236441971656ca724dc38b55e345" name="a0acd236441971656ca724dc38b55e345"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0acd236441971656ca724dc38b55e345">&#9670;&#160;</a></span>FindObjects&lt; T &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IEnumerable&lt; T &gt; BHS.Engine.Scene.GameScene.FindObjects&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Нахожу все объекты определенного типа </p>
+<div class="typeconstraint">
+<dl><dt><b>Согласование типов</b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em>class</em></td><td>&#160;</td></tr>
+<tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em>ISceneObject</em></td><td>&#160;</td></tr>
+</table>
+</dd>
+</dl>
+</div>
+
+<p class="definition">См. определение в файле <a class="el" href="Scene_8cs_source.html">Scene.cs</a> строка <a class="el" href="Scene_8cs_source.html#l00098">98</a></p>
+
+</div>
+</div>
+<a id="a37f23ff5f1ef0232a025e07ef77dc6a1" name="a37f23ff5f1ef0232a025e07ef77dc6a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37f23ff5f1ef0232a025e07ef77dc6a1">&#9670;&#160;</a></span>RemoveObject() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool BHS.Engine.Scene.GameScene.RemoveObject </td>
+          <td>(</td>
+          <td class="paramtype">Guid</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Удаляю объект по ID. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="Scene_8cs_source.html">Scene.cs</a> строка <a class="el" href="Scene_8cs_source.html#l00073">73</a></p>
+
+</div>
+</div>
+<a id="a5b05d3e3516d4cf5ce99471e889e6d45" name="a5b05d3e3516d4cf5ce99471e889e6d45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b05d3e3516d4cf5ce99471e889e6d45">&#9670;&#160;</a></span>RemoveObject() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool BHS.Engine.Scene.GameScene.RemoveObject </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfaceBHS_1_1Engine_1_1Core_1_1Interfaces_1_1ISceneObject.html">ISceneObject</a></td>          <td class="paramname"><span class="paramname"><em>sceneObject</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Удаляю объект из сцены </p>
+
+<p class="definition">См. определение в файле <a class="el" href="Scene_8cs_source.html">Scene.cs</a> строка <a class="el" href="Scene_8cs_source.html#l00047">47</a></p>
+
+</div>
+</div>
+<a id="af9cf19f7617d17596c21025405e666a8" name="af9cf19f7617d17596c21025405e666a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9cf19f7617d17596c21025405e666a8">&#9670;&#160;</a></span>ToString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override string BHS.Engine.Scene.GameScene.ToString </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="Scene_8cs_source.html">Scene.cs</a> строка <a class="el" href="Scene_8cs_source.html#l00157">157</a></p>
+
+</div>
+</div>
+<a id="a793bc05f8999eb405ade7a73ee8d4f8b" name="a793bc05f8999eb405ade7a73ee8d4f8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a793bc05f8999eb405ade7a73ee8d4f8b">&#9670;&#160;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BHS.Engine.Scene.GameScene.Update </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>deltaTime</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Обновляю все объекты сцены </p>
+
+<p class="definition">См. определение в файле <a class="el" href="Scene_8cs_source.html">Scene.cs</a> строка <a class="el" href="Scene_8cs_source.html#l00106">106</a></p>
+
+</div>
+</div>
+<a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">Полный список свойств</h2>
+<a id="aaee11c76a192704a1aea10098936a48b" name="aaee11c76a192704a1aea10098936a48b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaee11c76a192704a1aea10098936a48b">&#9670;&#160;</a></span>Balls</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IReadOnlyList&lt;<a class="el" href="classBHS_1_1Engine_1_1Scene_1_1Ball.html">Ball</a>&gt; BHS.Engine.Scene.GameScene.Balls</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="Scene_8cs_source.html">Scene.cs</a> строка <a class="el" href="Scene_8cs_source.html#l00020">20</a></p>
+
+</div>
+</div>
+<a id="a6e8b36a3d9c92be1af83ee8df8106e8c" name="a6e8b36a3d9c92be1af83ee8df8106e8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e8b36a3d9c92be1af83ee8df8106e8c">&#9670;&#160;</a></span>ObjectCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int BHS.Engine.Scene.GameScene.ObjectCount</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="Scene_8cs_source.html">Scene.cs</a> строка <a class="el" href="Scene_8cs_source.html#l00021">21</a></p>
+
+</div>
+</div>
+<a id="a10e000af67053dd04c3e009c4f3050ab" name="a10e000af67053dd04c3e009c4f3050ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10e000af67053dd04c3e009c4f3050ab">&#9670;&#160;</a></span>Objects</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IReadOnlyList&lt;<a class="el" href="interfaceBHS_1_1Engine_1_1Core_1_1Interfaces_1_1ISceneObject.html">ISceneObject</a>&gt; BHS.Engine.Scene.GameScene.Objects</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="Scene_8cs_source.html">Scene.cs</a> строка <a class="el" href="Scene_8cs_source.html#l00018">18</a></p>
+
+</div>
+</div>
+<a id="ab6647ebf27c0446465de93378329c75d" name="ab6647ebf27c0446465de93378329c75d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6647ebf27c0446465de93378329c75d">&#9670;&#160;</a></span>Walls</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IReadOnlyList&lt;<a class="el" href="classBHS_1_1Engine_1_1Scene_1_1Wall.html">Wall</a>&gt; BHS.Engine.Scene.GameScene.Walls</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="Scene_8cs_source.html">Scene.cs</a> строка <a class="el" href="Scene_8cs_source.html#l00019">19</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>src/Scene/<a class="el" href="Scene_8cs_source.html">Scene.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

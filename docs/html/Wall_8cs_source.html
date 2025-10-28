@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BHS Claw Engine Test: Исходный файл src/Scene/Wall.cs</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">BHS Claw Engine Test<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Тестовый движок для симуляции физики шарика с коллизиями</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',false);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a href="dir_204260ac86670e69c647eaba8962e745.html">Scene</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">Wall.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="Wall_8cs.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespaceBHS_1_1Engine_1_1Core_1_1Math.html">BHS.Engine.Core.Math</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceBHS_1_1Engine_1_1Scene.html">BHS.Engine.Scene</a></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>{</div>
+<div class="foldopen" id="foldopen00008" data-start="{" data-end="};">
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="classBHS_1_1Engine_1_1Scene_1_1Wall.html">    8</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_function" href="classBHS_1_1Engine_1_1Scene_1_1Wall.html#ab2fa8225e07005abebab076c7c8c5f98">Wall</a> : <a class="code hl_function" href="classBHS_1_1Engine_1_1Scene_1_1SceneObject.html#abac8a442bc41f301b61800872fbb9bde">SceneObject</a></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="classBHS_1_1Engine_1_1Scene_1_1Wall.html#a6df85442cd6a6792ffeda4e37ae52857">   10</a></span>        <span class="keyword">public</span> <a class="code hl_struct" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> <a class="code hl_property" href="classBHS_1_1Engine_1_1Scene_1_1Wall.html#a6df85442cd6a6792ffeda4e37ae52857">Start</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="classBHS_1_1Engine_1_1Scene_1_1Wall.html#a32b32f24289643fd73ad08b103f226cc">   11</a></span>        <span class="keyword">public</span> <a class="code hl_struct" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> <a class="code hl_property" href="classBHS_1_1Engine_1_1Scene_1_1Wall.html#a32b32f24289643fd73ad08b103f226cc">End</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span></div>
+<div class="foldopen" id="foldopen00016" data-start="{" data-end="};">
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="classBHS_1_1Engine_1_1Scene_1_1Wall.html#a8489f8dc0b98c34ac7302176f60ac5ac">   16</a></span>        <span class="keyword">public</span> <a class="code hl_struct" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> <a class="code hl_property" href="classBHS_1_1Engine_1_1Scene_1_1Wall.html#a8489f8dc0b98c34ac7302176f60ac5ac">Normal</a></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            <span class="keyword">get</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>                <a class="code hl_struct" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> direction = (<a class="code hl_property" href="classBHS_1_1Engine_1_1Scene_1_1Wall.html#a32b32f24289643fd73ad08b103f226cc">End</a> - <a class="code hl_property" href="classBHS_1_1Engine_1_1Scene_1_1Wall.html#a6df85442cd6a6792ffeda4e37ae52857">Start</a>).Normalized;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_struct" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a>(-direction.<a class="code hl_property" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html#aa438f770c0c6c0d84edc06406863741c">Y</a>, direction.<a class="code hl_property" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html#ae092cce638996c4a2c2d5ad510ef22db">X</a>);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            }</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        }</div>
+</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classBHS_1_1Engine_1_1Scene_1_1Wall.html#afcef33a8c04e5aec7ab7e208bb5905f0">   25</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_property" href="classBHS_1_1Engine_1_1Scene_1_1Wall.html#afcef33a8c04e5aec7ab7e208bb5905f0">Length</a> =&gt; <a class="code hl_struct" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a>.<a class="code hl_function" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html#ae5c740c00b238eed6abc38b6b607904e">Distance</a>(<a class="code hl_property" href="classBHS_1_1Engine_1_1Scene_1_1Wall.html#a6df85442cd6a6792ffeda4e37ae52857">Start</a>, <a class="code hl_property" href="classBHS_1_1Engine_1_1Scene_1_1Wall.html#a32b32f24289643fd73ad08b103f226cc">End</a>);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="foldopen" id="foldopen00027" data-start="{" data-end="}">
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="classBHS_1_1Engine_1_1Scene_1_1Wall.html#ab2fa8225e07005abebab076c7c8c5f98">   27</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="classBHS_1_1Engine_1_1Scene_1_1Wall.html#ab2fa8225e07005abebab076c7c8c5f98">Wall</a>(<a class="code hl_struct" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> start, <a class="code hl_struct" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> end) : base(<a class="code hl_struct" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a>.Zero)</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            <a class="code hl_property" href="classBHS_1_1Engine_1_1Scene_1_1Wall.html#a6df85442cd6a6792ffeda4e37ae52857">Start</a> = start;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            <a class="code hl_property" href="classBHS_1_1Engine_1_1Scene_1_1Wall.html#a32b32f24289643fd73ad08b103f226cc">End</a> = end;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            <a class="code hl_property" href="classBHS_1_1Engine_1_1Scene_1_1SceneObject.html#a25d0373f3aa347cbd38bb93ddf84dd18">Position</a> = (start + end) / 2f;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        }</div>
+</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span></div>
+<div class="foldopen" id="foldopen00037" data-start="{" data-end="}">
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classBHS_1_1Engine_1_1Scene_1_1Wall.html#abc940da0388b700d8c263dec7e440b96">   37</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classBHS_1_1Engine_1_1Scene_1_1Wall.html#abc940da0388b700d8c263dec7e440b96">ContainsPoint</a>(<a class="code hl_struct" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> point, <span class="keywordtype">float</span> thickness = 0.1f)</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            <a class="code hl_struct" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> wallDirection = <a class="code hl_property" href="classBHS_1_1Engine_1_1Scene_1_1Wall.html#a32b32f24289643fd73ad08b103f226cc">End</a> - <a class="code hl_property" href="classBHS_1_1Engine_1_1Scene_1_1Wall.html#a6df85442cd6a6792ffeda4e37ae52857">Start</a>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            <span class="keywordtype">float</span> wallLengthSqr = wallDirection.<a class="code hl_property" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html#aa754771571d478c05529ef7b6918df4a">SqrMagnitude</a>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <span class="keywordflow">if</span> (wallLengthSqr &lt; MathHelper.Epsilon)</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                <span class="keywordflow">return</span> <a class="code hl_struct" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a>.<a class="code hl_function" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html#ae5c740c00b238eed6abc38b6b607904e">Distance</a>(point, <a class="code hl_property" href="classBHS_1_1Engine_1_1Scene_1_1Wall.html#a6df85442cd6a6792ffeda4e37ae52857">Start</a>) &lt;= thickness;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            <span class="keywordtype">float</span> t = <a class="code hl_struct" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a>.<a class="code hl_function" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html#a7001ef4f519c9394b5e60cb1ddea1c0a">Dot</a>(point - <a class="code hl_property" href="classBHS_1_1Engine_1_1Scene_1_1Wall.html#a6df85442cd6a6792ffeda4e37ae52857">Start</a>, wallDirection) / wallLengthSqr;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            t = MathHelper.Clamp(t, 0f, 1f);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            <a class="code hl_struct" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> closestPoint = <a class="code hl_property" href="classBHS_1_1Engine_1_1Scene_1_1Wall.html#a6df85442cd6a6792ffeda4e37ae52857">Start</a> + t * wallDirection;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <span class="keywordflow">return</span> <a class="code hl_struct" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a>.<a class="code hl_function" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html#ae5c740c00b238eed6abc38b6b607904e">Distance</a>(point, closestPoint) &lt;= thickness;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        }</div>
+</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span></div>
+<div class="foldopen" id="foldopen00055" data-start="{" data-end="}">
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="classBHS_1_1Engine_1_1Scene_1_1Wall.html#a9eae7d1074fb4cb70ebc71870bda5813">   55</a></span>        <span class="keyword">public</span> <a class="code hl_struct" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> <a class="code hl_function" href="classBHS_1_1Engine_1_1Scene_1_1Wall.html#a9eae7d1074fb4cb70ebc71870bda5813">GetClosestPoint</a>(<a class="code hl_struct" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> point)</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            <a class="code hl_struct" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> wallDirection = <a class="code hl_property" href="classBHS_1_1Engine_1_1Scene_1_1Wall.html#a32b32f24289643fd73ad08b103f226cc">End</a> - <a class="code hl_property" href="classBHS_1_1Engine_1_1Scene_1_1Wall.html#a6df85442cd6a6792ffeda4e37ae52857">Start</a>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <span class="keywordtype">float</span> wallLengthSqr = wallDirection.<a class="code hl_property" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html#aa754771571d478c05529ef7b6918df4a">SqrMagnitude</a>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            <span class="keywordflow">if</span> (wallLengthSqr &lt; MathHelper.Epsilon)</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                <span class="keywordflow">return</span> <a class="code hl_property" href="classBHS_1_1Engine_1_1Scene_1_1Wall.html#a6df85442cd6a6792ffeda4e37ae52857">Start</a>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            <span class="keywordtype">float</span> t = <a class="code hl_struct" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a>.<a class="code hl_function" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html#a7001ef4f519c9394b5e60cb1ddea1c0a">Dot</a>(point - <a class="code hl_property" href="classBHS_1_1Engine_1_1Scene_1_1Wall.html#a6df85442cd6a6792ffeda4e37ae52857">Start</a>, wallDirection) / wallLengthSqr;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            t = MathHelper.Clamp(t, 0f, 1f);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            <span class="keywordflow">return</span> <a class="code hl_property" href="classBHS_1_1Engine_1_1Scene_1_1Wall.html#a6df85442cd6a6792ffeda4e37ae52857">Start</a> + t * wallDirection;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        }</div>
+</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="foldopen" id="foldopen00069" data-start="{" data-end="}">
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="classBHS_1_1Engine_1_1Scene_1_1Wall.html#a3dcb3faaf74ca81b6eb3a2035165b377">   69</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_function" href="classBHS_1_1Engine_1_1Scene_1_1Wall.html#a3dcb3faaf74ca81b6eb3a2035165b377">ToString</a>()</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            <span class="keywordflow">return</span> $<span class="stringliteral">&quot;Wall (ID: {Id}, Start: {Start}, End: {End}, Length: {Length:F2})&quot;</span>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        }</div>
+</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    }</div>
+</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>}</div>
+<div class="ttc" id="aclassBHS_1_1Engine_1_1Scene_1_1SceneObject_html_a25d0373f3aa347cbd38bb93ddf84dd18"><div class="ttname"><a href="classBHS_1_1Engine_1_1Scene_1_1SceneObject.html#a25d0373f3aa347cbd38bb93ddf84dd18">BHS.Engine.Scene.SceneObject.Position</a></div><div class="ttdeci">Vector2 Position</div><div class="ttdoc">Позиция объекта в мире</div><div class="ttdef"><b>Определения</b> <a href="SceneObject_8cs_source.html#l00013">SceneObject.cs:13</a></div></div>
+<div class="ttc" id="aclassBHS_1_1Engine_1_1Scene_1_1SceneObject_html_abac8a442bc41f301b61800872fbb9bde"><div class="ttname"><a href="classBHS_1_1Engine_1_1Scene_1_1SceneObject.html#abac8a442bc41f301b61800872fbb9bde">BHS.Engine.Scene.SceneObject.SceneObject</a></div><div class="ttdeci">SceneObject(Vector2 position)</div><div class="ttdef"><b>Определения</b> <a href="SceneObject_8cs_source.html#l00015">SceneObject.cs:15</a></div></div>
+<div class="ttc" id="aclassBHS_1_1Engine_1_1Scene_1_1Wall_html_a32b32f24289643fd73ad08b103f226cc"><div class="ttname"><a href="classBHS_1_1Engine_1_1Scene_1_1Wall.html#a32b32f24289643fd73ad08b103f226cc">BHS.Engine.Scene.Wall.End</a></div><div class="ttdeci">Vector2 End</div><div class="ttdef"><b>Определения</b> <a href="#l00011">Wall.cs:11</a></div></div>
+<div class="ttc" id="aclassBHS_1_1Engine_1_1Scene_1_1Wall_html_a3dcb3faaf74ca81b6eb3a2035165b377"><div class="ttname"><a href="classBHS_1_1Engine_1_1Scene_1_1Wall.html#a3dcb3faaf74ca81b6eb3a2035165b377">BHS.Engine.Scene.Wall.ToString</a></div><div class="ttdeci">override string ToString()</div><div class="ttdef"><b>Определения</b> <a href="#l00069">Wall.cs:69</a></div></div>
+<div class="ttc" id="aclassBHS_1_1Engine_1_1Scene_1_1Wall_html_a6df85442cd6a6792ffeda4e37ae52857"><div class="ttname"><a href="classBHS_1_1Engine_1_1Scene_1_1Wall.html#a6df85442cd6a6792ffeda4e37ae52857">BHS.Engine.Scene.Wall.Start</a></div><div class="ttdeci">Vector2 Start</div><div class="ttdef"><b>Определения</b> <a href="#l00010">Wall.cs:10</a></div></div>
+<div class="ttc" id="aclassBHS_1_1Engine_1_1Scene_1_1Wall_html_a8489f8dc0b98c34ac7302176f60ac5ac"><div class="ttname"><a href="classBHS_1_1Engine_1_1Scene_1_1Wall.html#a8489f8dc0b98c34ac7302176f60ac5ac">BHS.Engine.Scene.Wall.Normal</a></div><div class="ttdeci">Vector2 Normal</div><div class="ttdoc">Получаю нормаль к стене (направлена наружу)</div><div class="ttdef"><b>Определения</b> <a href="#l00016">Wall.cs:17</a></div></div>
+<div class="ttc" id="aclassBHS_1_1Engine_1_1Scene_1_1Wall_html_a9eae7d1074fb4cb70ebc71870bda5813"><div class="ttname"><a href="classBHS_1_1Engine_1_1Scene_1_1Wall.html#a9eae7d1074fb4cb70ebc71870bda5813">BHS.Engine.Scene.Wall.GetClosestPoint</a></div><div class="ttdeci">Vector2 GetClosestPoint(Vector2 point)</div><div class="ttdoc">Нахожу ближайшую точку на стене к заданной точке</div><div class="ttdef"><b>Определения</b> <a href="#l00055">Wall.cs:55</a></div></div>
+<div class="ttc" id="aclassBHS_1_1Engine_1_1Scene_1_1Wall_html_ab2fa8225e07005abebab076c7c8c5f98"><div class="ttname"><a href="classBHS_1_1Engine_1_1Scene_1_1Wall.html#ab2fa8225e07005abebab076c7c8c5f98">BHS.Engine.Scene.Wall.Wall</a></div><div class="ttdeci">Wall(Vector2 start, Vector2 end)</div><div class="ttdef"><b>Определения</b> <a href="#l00027">Wall.cs:27</a></div></div>
+<div class="ttc" id="aclassBHS_1_1Engine_1_1Scene_1_1Wall_html_abc940da0388b700d8c263dec7e440b96"><div class="ttname"><a href="classBHS_1_1Engine_1_1Scene_1_1Wall.html#abc940da0388b700d8c263dec7e440b96">BHS.Engine.Scene.Wall.ContainsPoint</a></div><div class="ttdeci">bool ContainsPoint(Vector2 point, float thickness=0.1f)</div><div class="ttdoc">Проверяю содержит ли стена точку с учетом толщины</div><div class="ttdef"><b>Определения</b> <a href="#l00037">Wall.cs:37</a></div></div>
+<div class="ttc" id="aclassBHS_1_1Engine_1_1Scene_1_1Wall_html_afcef33a8c04e5aec7ab7e208bb5905f0"><div class="ttname"><a href="classBHS_1_1Engine_1_1Scene_1_1Wall.html#afcef33a8c04e5aec7ab7e208bb5905f0">BHS.Engine.Scene.Wall.Length</a></div><div class="ttdeci">float Length</div><div class="ttdef"><b>Определения</b> <a href="#l00025">Wall.cs:25</a></div></div>
+<div class="ttc" id="anamespaceBHS_1_1Engine_1_1Core_1_1Math_html"><div class="ttname"><a href="namespaceBHS_1_1Engine_1_1Core_1_1Math.html">BHS.Engine.Core.Math</a></div><div class="ttdef"><b>Определения</b> <a href="MathHelper_8cs_source.html#l00003">MathHelper.cs:4</a></div></div>
+<div class="ttc" id="anamespaceBHS_1_1Engine_1_1Scene_html"><div class="ttname"><a href="namespaceBHS_1_1Engine_1_1Scene.html">BHS.Engine.Scene</a></div><div class="ttdef"><b>Определения</b> <a href="Ball_8cs_source.html#l00003">Ball.cs:4</a></div></div>
+<div class="ttc" id="astructBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2_html"><div class="ttname"><a href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">BHS.Engine.Core.Math.Vector2</a></div><div class="ttdoc">2D вектор для позиций и скоростей</div><div class="ttdef"><b>Определения</b> <a href="Vector2_8cs_source.html#l00008">Vector2.cs:9</a></div></div>
+<div class="ttc" id="astructBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2_html_a7001ef4f519c9394b5e60cb1ddea1c0a"><div class="ttname"><a href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html#a7001ef4f519c9394b5e60cb1ddea1c0a">BHS.Engine.Core.Math.Vector2.Dot</a></div><div class="ttdeci">static float Dot(Vector2 a, Vector2 b)</div><div class="ttdoc">Скалярное произведение</div></div>
+<div class="ttc" id="astructBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2_html_aa438f770c0c6c0d84edc06406863741c"><div class="ttname"><a href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html#aa438f770c0c6c0d84edc06406863741c">BHS.Engine.Core.Math.Vector2.Y</a></div><div class="ttdeci">float Y</div><div class="ttdef"><b>Определения</b> <a href="Vector2_8cs_source.html#l00011">Vector2.cs:11</a></div></div>
+<div class="ttc" id="astructBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2_html_aa754771571d478c05529ef7b6918df4a"><div class="ttname"><a href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html#aa754771571d478c05529ef7b6918df4a">BHS.Engine.Core.Math.Vector2.SqrMagnitude</a></div><div class="ttdeci">float SqrMagnitude</div><div class="ttdoc">Квадрат длины вектора (для оптимизации)</div><div class="ttdef"><b>Определения</b> <a href="Vector2_8cs_source.html#l00030">Vector2.cs:30</a></div></div>
+<div class="ttc" id="astructBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2_html_ae092cce638996c4a2c2d5ad510ef22db"><div class="ttname"><a href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html#ae092cce638996c4a2c2d5ad510ef22db">BHS.Engine.Core.Math.Vector2.X</a></div><div class="ttdeci">float X</div><div class="ttdef"><b>Определения</b> <a href="Vector2_8cs_source.html#l00010">Vector2.cs:10</a></div></div>
+<div class="ttc" id="astructBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2_html_ae5c740c00b238eed6abc38b6b607904e"><div class="ttname"><a href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html#ae5c740c00b238eed6abc38b6b607904e">BHS.Engine.Core.Math.Vector2.Distance</a></div><div class="ttdeci">static float Distance(Vector2 a, Vector2 b)</div><div class="ttdoc">Расстояние между двумя точками</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

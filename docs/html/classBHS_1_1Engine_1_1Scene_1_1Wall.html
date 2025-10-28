@@ -1,0 +1,366 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BHS Claw Engine Test: Класс BHS.Engine.Scene.Wall</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">BHS Claw Engine Test<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Тестовый движок для симуляции физики шарика с коллизиями</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',false);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a href="namespaceBHS.html">BHS</a></li><li class="navelem"><a href="namespaceBHS_1_1Engine.html">Engine</a></li><li class="navelem"><a href="namespaceBHS_1_1Engine_1_1Scene.html">Scene</a></li><li class="navelem"><a href="classBHS_1_1Engine_1_1Scene_1_1Wall.html">Wall</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#properties">Свойства</a> &#124;
+<a href="classBHS_1_1Engine_1_1Scene_1_1Wall-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс BHS.Engine.Scene.Wall</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Стена - отрезок между двумя точками для коллизий  
+ <a href="#details">Подробнее...</a></p>
+<div class="dynheader">
+Граф наследования:BHS.Engine.Scene.Wall:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBHS_1_1Engine_1_1Scene_1_1Wall__inherit__graph.png" border="0" usemap="#aBHS_8Engine_8Scene_8Wall_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<div class="dynheader">
+Граф связей класса BHS.Engine.Scene.Wall:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBHS_1_1Engine_1_1Scene_1_1Wall__coll__graph.png" border="0" usemap="#aBHS_8Engine_8Scene_8Wall_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:ab2fa8225e07005abebab076c7c8c5f98" id="r_ab2fa8225e07005abebab076c7c8c5f98"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab2fa8225e07005abebab076c7c8c5f98">Wall</a> (<a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> start, <a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> end)</td></tr>
+<tr class="memitem:abc940da0388b700d8c263dec7e440b96" id="r_abc940da0388b700d8c263dec7e440b96"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc940da0388b700d8c263dec7e440b96">ContainsPoint</a> (<a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> point, float thickness=0.1f)</td></tr>
+<tr class="memdesc:abc940da0388b700d8c263dec7e440b96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяю содержит ли стена точку с учетом толщины  <br /></td></tr>
+<tr class="memitem:a9eae7d1074fb4cb70ebc71870bda5813" id="r_a9eae7d1074fb4cb70ebc71870bda5813"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9eae7d1074fb4cb70ebc71870bda5813">GetClosestPoint</a> (<a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> point)</td></tr>
+<tr class="memdesc:a9eae7d1074fb4cb70ebc71870bda5813"><td class="mdescLeft">&#160;</td><td class="mdescRight">Нахожу ближайшую точку на стене к заданной точке  <br /></td></tr>
+<tr class="memitem:a3dcb3faaf74ca81b6eb3a2035165b377" id="r_a3dcb3faaf74ca81b6eb3a2035165b377"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3dcb3faaf74ca81b6eb3a2035165b377">ToString</a> ()</td></tr>
+<tr class="inherit_header pub_methods_classBHS_1_1Engine_1_1Scene_1_1SceneObject"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classBHS_1_1Engine_1_1Scene_1_1SceneObject')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Открытые члены унаследованные от <a class="el" href="classBHS_1_1Engine_1_1Scene_1_1SceneObject.html">BHS.Engine.Scene.SceneObject</a></td></tr>
+<tr class="memitem:a2098e42113949e67469e5cc7611df645 inherit pub_methods_classBHS_1_1Engine_1_1Scene_1_1SceneObject" id="r_a2098e42113949e67469e5cc7611df645"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBHS_1_1Engine_1_1Scene_1_1SceneObject.html#a2098e42113949e67469e5cc7611df645">Update</a> (float deltaTime)</td></tr>
+<tr class="memdesc:a2098e42113949e67469e5cc7611df645 inherit pub_methods_classBHS_1_1Engine_1_1Scene_1_1SceneObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обновляю объект каждый кадр  <br /></td></tr>
+<tr class="memitem:a7e271ce099def2727a73428dceba8abb inherit pub_methods_classBHS_1_1Engine_1_1Scene_1_1SceneObject" id="r_a7e271ce099def2727a73428dceba8abb"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBHS_1_1Engine_1_1Scene_1_1SceneObject.html#a7e271ce099def2727a73428dceba8abb">ToString</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-properties" class="groupheader"><a id="properties" name="properties"></a>
+Свойства</h2></td></tr>
+<tr class="memitem:a6df85442cd6a6792ffeda4e37ae52857" id="r_a6df85442cd6a6792ffeda4e37ae52857"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6df85442cd6a6792ffeda4e37ae52857">Start</a><code> [get, set]</code></td></tr>
+<tr class="memitem:a32b32f24289643fd73ad08b103f226cc" id="r_a32b32f24289643fd73ad08b103f226cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32b32f24289643fd73ad08b103f226cc">End</a><code> [get, set]</code></td></tr>
+<tr class="memitem:a8489f8dc0b98c34ac7302176f60ac5ac" id="r_a8489f8dc0b98c34ac7302176f60ac5ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8489f8dc0b98c34ac7302176f60ac5ac">Normal</a><code> [get]</code></td></tr>
+<tr class="memdesc:a8489f8dc0b98c34ac7302176f60ac5ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получаю нормаль к стене (направлена наружу)  <br /></td></tr>
+<tr class="memitem:afcef33a8c04e5aec7ab7e208bb5905f0" id="r_afcef33a8c04e5aec7ab7e208bb5905f0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afcef33a8c04e5aec7ab7e208bb5905f0">Length</a><code> [get]</code></td></tr>
+<tr class="inherit_header properties_classBHS_1_1Engine_1_1Scene_1_1SceneObject"><td colspan="2" onclick="javascript:dynsection.toggleInherit('properties_classBHS_1_1Engine_1_1Scene_1_1SceneObject')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Свойства унаследованные от <a class="el" href="classBHS_1_1Engine_1_1Scene_1_1SceneObject.html">BHS.Engine.Scene.SceneObject</a></td></tr>
+<tr class="memitem:a3b1b972cee8c629ea5065a3882b0518d inherit properties_classBHS_1_1Engine_1_1Scene_1_1SceneObject" id="r_a3b1b972cee8c629ea5065a3882b0518d"><td class="memItemLeft" align="right" valign="top">Guid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBHS_1_1Engine_1_1Scene_1_1SceneObject.html#a3b1b972cee8c629ea5065a3882b0518d">Id</a><code> [get]</code></td></tr>
+<tr class="memdesc:a3b1b972cee8c629ea5065a3882b0518d inherit properties_classBHS_1_1Engine_1_1Scene_1_1SceneObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Уникальный идентификатор объекта  <br /></td></tr>
+<tr class="memitem:a25d0373f3aa347cbd38bb93ddf84dd18 inherit properties_classBHS_1_1Engine_1_1Scene_1_1SceneObject" id="r_a25d0373f3aa347cbd38bb93ddf84dd18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBHS_1_1Engine_1_1Scene_1_1SceneObject.html#a25d0373f3aa347cbd38bb93ddf84dd18">Position</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a25d0373f3aa347cbd38bb93ddf84dd18 inherit properties_classBHS_1_1Engine_1_1Scene_1_1SceneObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Позиция объекта в мире  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
+Дополнительные унаследованные члены</h2></td></tr>
+<tr class="inherit_header pro_methods_classBHS_1_1Engine_1_1Scene_1_1SceneObject"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classBHS_1_1Engine_1_1Scene_1_1SceneObject')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Защищенные члены унаследованные от <a class="el" href="classBHS_1_1Engine_1_1Scene_1_1SceneObject.html">BHS.Engine.Scene.SceneObject</a></td></tr>
+<tr class="memitem:abac8a442bc41f301b61800872fbb9bde inherit pro_methods_classBHS_1_1Engine_1_1Scene_1_1SceneObject" id="r_abac8a442bc41f301b61800872fbb9bde"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBHS_1_1Engine_1_1Scene_1_1SceneObject.html#abac8a442bc41f301b61800872fbb9bde">SceneObject</a> (<a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> position)</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Стена - отрезок между двумя точками для коллизий </p>
+
+<p class="definition">См. определение в файле <a class="el" href="Wall_8cs_source.html">Wall.cs</a> строка <a class="el" href="Wall_8cs_source.html#l00008">8</a></p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Конструктор(ы)</h2>
+<a id="ab2fa8225e07005abebab076c7c8c5f98" name="ab2fa8225e07005abebab076c7c8c5f98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2fa8225e07005abebab076c7c8c5f98">&#9670;&#160;</a></span>Wall()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BHS.Engine.Scene.Wall.Wall </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a></td>          <td class="paramname"><span class="paramname"><em>start</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a></td>          <td class="paramname"><span class="paramname"><em>end</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="Wall_8cs_source.html">Wall.cs</a> строка <a class="el" href="Wall_8cs_source.html#l00027">27</a></p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="abc940da0388b700d8c263dec7e440b96" name="abc940da0388b700d8c263dec7e440b96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc940da0388b700d8c263dec7e440b96">&#9670;&#160;</a></span>ContainsPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool BHS.Engine.Scene.Wall.ContainsPoint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a></td>          <td class="paramname"><span class="paramname"><em>point</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>thickness</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0::1f</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверяю содержит ли стена точку с учетом толщины </p>
+
+<p class="definition">См. определение в файле <a class="el" href="Wall_8cs_source.html">Wall.cs</a> строка <a class="el" href="Wall_8cs_source.html#l00037">37</a></p>
+
+</div>
+</div>
+<a id="a9eae7d1074fb4cb70ebc71870bda5813" name="a9eae7d1074fb4cb70ebc71870bda5813"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9eae7d1074fb4cb70ebc71870bda5813">&#9670;&#160;</a></span>GetClosestPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> BHS.Engine.Scene.Wall.GetClosestPoint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a></td>          <td class="paramname"><span class="paramname"><em>point</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Нахожу ближайшую точку на стене к заданной точке </p>
+
+<p class="definition">См. определение в файле <a class="el" href="Wall_8cs_source.html">Wall.cs</a> строка <a class="el" href="Wall_8cs_source.html#l00055">55</a></p>
+
+</div>
+</div>
+<a id="a3dcb3faaf74ca81b6eb3a2035165b377" name="a3dcb3faaf74ca81b6eb3a2035165b377"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3dcb3faaf74ca81b6eb3a2035165b377">&#9670;&#160;</a></span>ToString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override string BHS.Engine.Scene.Wall.ToString </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="Wall_8cs_source.html">Wall.cs</a> строка <a class="el" href="Wall_8cs_source.html#l00069">69</a></p>
+
+</div>
+</div>
+<a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">Полный список свойств</h2>
+<a id="a32b32f24289643fd73ad08b103f226cc" name="a32b32f24289643fd73ad08b103f226cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32b32f24289643fd73ad08b103f226cc">&#9670;&#160;</a></span>End</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> BHS.Engine.Scene.Wall.End</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="Wall_8cs_source.html">Wall.cs</a> строка <a class="el" href="Wall_8cs_source.html#l00011">11</a></p>
+
+</div>
+</div>
+<a id="afcef33a8c04e5aec7ab7e208bb5905f0" name="afcef33a8c04e5aec7ab7e208bb5905f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcef33a8c04e5aec7ab7e208bb5905f0">&#9670;&#160;</a></span>Length</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float BHS.Engine.Scene.Wall.Length</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="Wall_8cs_source.html">Wall.cs</a> строка <a class="el" href="Wall_8cs_source.html#l00025">25</a></p>
+
+</div>
+</div>
+<a id="a8489f8dc0b98c34ac7302176f60ac5ac" name="a8489f8dc0b98c34ac7302176f60ac5ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8489f8dc0b98c34ac7302176f60ac5ac">&#9670;&#160;</a></span>Normal</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> BHS.Engine.Scene.Wall.Normal</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Получаю нормаль к стене (направлена наружу) </p>
+
+<p class="definition">См. определение в файле <a class="el" href="Wall_8cs_source.html">Wall.cs</a> строка <a class="el" href="Wall_8cs_source.html#l00016">16</a></p>
+
+</div>
+</div>
+<a id="a6df85442cd6a6792ffeda4e37ae52857" name="a6df85442cd6a6792ffeda4e37ae52857"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6df85442cd6a6792ffeda4e37ae52857">&#9670;&#160;</a></span>Start</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> BHS.Engine.Scene.Wall.Start</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="Wall_8cs_source.html">Wall.cs</a> строка <a class="el" href="Wall_8cs_source.html#l00010">10</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>src/Scene/<a class="el" href="Wall_8cs_source.html">Wall.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>
