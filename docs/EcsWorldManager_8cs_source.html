@@ -231,16 +231,16 @@ $(function() {
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>            scene.CreateBox(min, max);</div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>            Random random = <span class="keyword">new</span> Random();</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>            </div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>            <span class="keywordtype">float</span> wallLength = 40f;</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>            </div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>            <a class="code hl_struct" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> start = <span class="keyword">new</span> <a class="code hl_struct" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a>(</div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>                (<span class="keywordtype">float</span>)(random.NextDouble() * 50 + 25), <span class="comment">// между 25 и 75</span></div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>                (<span class="keywordtype">float</span>)(random.NextDouble() * 50 + 25)</div>
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>            );</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>            </div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span> </div>
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>            <span class="keywordtype">float</span> angle = (float)(random.NextDouble() * 2 * <a class="code hl_namespace" href="namespaceBHS_1_1Engine_1_1Core_1_1Math.html">Math</a>.PI);</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>            </div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>            <a class="code hl_struct" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a> end = <span class="keyword">new</span> <a class="code hl_struct" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a>(</div>
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>                start.<a class="code hl_property" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html#ae092cce638996c4a2c2d5ad510ef22db">X</a> + (<span class="keywordtype">float</span>)(<a class="code hl_namespace" href="namespaceBHS_1_1Engine_1_1Core_1_1Math.html">Math</a>.Cos(angle) * wallLength),</div>
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>                start.<a class="code hl_property" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html#aa438f770c0c6c0d84edc06406863741c">Y</a> + (<span class="keywordtype">float</span>)(<a class="code hl_namespace" href="namespaceBHS_1_1Engine_1_1Core_1_1Math.html">Math</a>.Sin(angle) * wallLength)</div>

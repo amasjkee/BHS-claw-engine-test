@@ -75,38 +75,36 @@ $(function() {
   <div class="headertitle"><div class="title">BHS Claw Engine Test </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1>Обзор</h1>
-<p>Физический движок с ECS-архитектурой для симуляции движения шарика в ограниченном пространстве.</p>
-<h2>Возможности</h2>
+<div class="textblock"><h1>Структура проекта</h1>
+<h2>src/Core</h2>
 <ul>
-<li>ECS на Leopotam.EcsLite: данные отделены от логики</li>
-<li>Реалистичные отражения при столкновениях</li>
-<li>Продвинутое обнаружение коллизий (CCD) против туннелирования</li>
-<li>Два режима скорости, кнопка High Speed во время симуляции</li>
-<li>Случайные стены фиксированной длины, корректные нормали, граничные проверки</li>
+<li><b>Math/</b> — математические утилиты (Vector2, MathHelper)</li>
+<li><b>Interfaces/</b> — интерфейсы (ISceneObject)</li>
+<li><b>Events/</b> — события (CollisionEvent)</li>
 </ul>
-<h2>Структура проекта</h2>
+<h2>src/ECS</h2>
 <ul>
-<li><span class="tt">src/Core</span> — базовые типы, математика</li>
-<li><span class="tt">src/ECS</span> — компоненты, системы и менеджер мира</li>
-<li><span class="tt">src/Physics</span> — расчеты коллизий и физики (advanced)</li>
-<li><span class="tt">src/Scene</span> — объекты сцены</li>
-<li><span class="tt">src/UI</span> — Avalonia UI</li>
+<li><b>Components/</b> — компоненты данных (Transform, Velocity, Colliders)</li>
+<li><b>Systems/</b> — системы логики (Movement, AdvancedCollision)</li>
+<li><b>EcsWorldManager.cs</b> — менеджер ECS мира</li>
 </ul>
-<h2>Как собрать документацию локально</h2>
-<div class="fragment"><div class="line">doxygen Doxyfile</div>
-</div><!-- fragment --><p> Результат будет в каталоге <span class="tt">html/</span>.</p>
-<h2>Ключевые реализации</h2>
+<h2>src/Physics</h2>
 <ul>
-<li>AdvancedCollisionSystem — адаптивные подшаги и граничные проверки</li>
-<li>AdvancedCollisionDetector — CCD и корректная нормаль от стены к шару</li>
-<li>AdvancedPhysicsCalculator — отражение без залипания</li>
+<li><b>AdvancedCollisionDetector.cs</b> — обнаружение коллизий</li>
+<li><b>AdvancedPhysicsCalculator.cs</b> — расчеты физики</li>
 </ul>
-<h2>Начните с этих классов</h2>
+<h2>src/Scene</h2>
 <ul>
-<li><span class="tt">src/ECS/Systems/AdvancedCollisionSystem.cs</span></li>
-<li><span class="tt">src/Physics/AdvancedCollisionDetector.cs</span></li>
-<li><span class="tt">src/Physics/AdvancedPhysicsCalculator.cs</span> </li>
+<li><b>SceneObject.cs</b> — базовый объект сцены</li>
+<li><b>Ball.cs</b> — шарик</li>
+<li><b>Wall.cs</b> — стена</li>
+<li><b>Scene.cs</b> — игровая сцена</li>
+</ul>
+<h2>src/UI</h2>
+<ul>
+<li><b>MainWindow.cs</b> — главное окно Avalonia</li>
+<li><b>App.axaml.cs</b> — приложение</li>
+<li><b>Program.cs</b> — точка входа UI </li>
 </ul>
 </div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"></a>

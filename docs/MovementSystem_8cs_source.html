@@ -98,14 +98,14 @@ $(function() {
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            var filter = world.Filter&lt;<a class="code hl_struct" href="structBHS_1_1Engine_1_1ECS_1_1Components_1_1TransformComponent.html">TransformComponent</a>&gt;().Inc&lt;VelocityComponent&gt;().End();</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            <span class="keywordtype">float</span> deltaTime = 1f / 60f;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            <span class="keywordflow">foreach</span> (var entity <span class="keywordflow">in</span> filter)</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            {</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>                ref var transform = ref transformPool.Get(entity);</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                ref var velocity = ref velocityPool.Get(entity);</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                transform.Position += velocity.Velocity * deltaTime;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                <span class="keywordflow">if</span> (velocity.Velocity.SqrMagnitude &lt; 0.01f)</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                {</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                    velocity.Velocity = <a class="code hl_namespace" href="namespaceBHS.html">BHS</a>.<a class="code hl_namespace" href="namespaceBHS_1_1Engine.html">Engine</a>.<a class="code hl_namespace" href="namespaceBHS_1_1Engine_1_1Core.html">Core</a>.<a class="code hl_namespace" href="namespaceBHS_1_1Engine_1_1Core_1_1Math.html">Math</a>.<a class="code hl_struct" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html">Vector2</a>.<a class="code hl_property" href="structBHS_1_1Engine_1_1Core_1_1Math_1_1Vector2.html#a89c246882720eaefda1c7f49bf428d27">Zero</a>;</div>
